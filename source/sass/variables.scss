@@ -10,12 +10,33 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$color-primary-black:               #102654;
+$color-primary-black-opacity-05:    rgba(16, 38, 84, 0.5);
+$color-primary-black-opacity-02:    rgba(120, 120, 120, 0.2);
+$color-secondary-black:             #495A7D;
 
+$color-primary-red:                 #ED0233;
+$color-secondary-red:               #D10A42;
+$color-secondary-red-opacity-02:    rgba(209, 10, 66, 0.2);
+$color-primary-blue:                #103AAE;
+$color-secondary-blue:              #00359F;
+
+$color-darkblue:                    #1C3374;
+$color-darkblue-opacity-089:        rgba(16, 38, 84, 0.89);
+
+$color-primary-grey:                #E8E8E8;
+$color-secondary-grey:              #F8F9FC;
+$color-darkgrey:                    #74819C;
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+$gradient-header:                  conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+
+$gradient-video-button:             linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+$gradient-button:                   linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+$gradient-advantages-figure:        linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
+$gradient-advantages-figure-first:  linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
 
 // Typography
 // ---------------------------------
@@ -47,7 +68,7 @@ $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
-$vp-1280:                           1280px;
+$vp-1200:                           1200px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
 
