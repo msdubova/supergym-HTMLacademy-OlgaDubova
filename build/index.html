@@ -16,9 +16,9 @@
 </head>
 
 <body class="page__body">
-  <header>
-    <div class="header__top">
-      <div class="container">
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__top">
         <a class="header__logo" aria-label="Логотип Фитнес-Центра SuperGym">
           <svg width="89" height="20" role="img">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
@@ -28,16 +28,16 @@
           8-800-555-55-55
         </a>
       </div>
-    </div>
-    <div class="header__intro">
-      <div class="container">
+
+      <div class="header__intro">
+
         <div class="header__info">
-          <h1>Фитнес-центр</h1>
+          <h1>Фитнес центр</h1>
           <h2 class="visually-hidden">
             Фитнес-клуб Super в городе Омск
           </h2>
-          <p>Омск</p>
-          <ul>
+          <h3>Омск</h3>
+          <ul class="header__ul">
             <li>
               Тренажерный зал
             </li>
@@ -48,7 +48,7 @@
               Кардио-зона
             </li>
           </ul>
-          <a class="button" href="#subscriptions">
+          <a class="header__button button" href="#subscriptions">
             Купить абонемент
           </a>
         </div>
@@ -68,7 +68,7 @@
             <img width="500" height="556" srcset="img/img-header-desktop-2x.png 2x" src="img/img-header-desktop-1x.png"
               alt="Изображение Фитнес-клуба SuperGym" loading="lazy">
           </picture>
-          <div class="socials">
+          <div class=" header__socials socials">
             <ul>
               <li>
                 <a href="#" aria-label="Перейти в сообщество Фитнес-клуба SuperGym в Facebook">
