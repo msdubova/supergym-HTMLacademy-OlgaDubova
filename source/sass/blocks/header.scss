@@ -18,8 +18,7 @@
     margin: 0;
     margin-bottom: 46px;
 
-    font-size: 109px;
-    line-height: 109px;
+    color: $color-default-white;
     text-align: right;
     word-wrap: break-word;
 
@@ -29,7 +28,7 @@
   h3 {
     order: 1;
     margin-bottom: 5px;
-
+    color: $color-default-white;
     font-weight: 400;
     font-size: 49px;
     line-height: 59px;

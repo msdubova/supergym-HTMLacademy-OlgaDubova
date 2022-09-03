@@ -1,0 +1,30 @@
+.subscription {
+  background-color: $color-secondary-grey;
+
+  ul {
+    @include reset-ul;
+  }
+
+  li {
+    background-color: $color-default-white;
+    padding: 68px 77px;
+    margin-bottom: 30px;
+  }
+  .subscription__container {
+    position: relative;
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .subscription__img {
+    position: absolute;
+    top: 80%;
+    right: 0;
+  }
+
+  .subscription__tabs {
+    display: flex;
+    justify-content: space-between;
+  }
+}

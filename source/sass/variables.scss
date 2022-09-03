@@ -3,7 +3,7 @@
 
 // Default
 
-$color-default-black:               #000000;
+$color-default-black:               #030A1A;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
 
@@ -37,7 +37,7 @@ $gradient-video-button:             linear-gradient(44.89deg, #003D85 25.38%, #B
 $gradient-button:                   linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
 $gradient-advantages-figure:        linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
 $gradient-advantages-figure-first:  linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
-
+$gradient-feedback: linear-gradient(to right, #102654 50%, #ffffff 50%);
 // Typography
 // ---------------------------------
 

@@ -1,0 +1,22 @@
+.link {
+  font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color:$color-darkblue;
+border-bottom: 1px solid $color-darkblue;
+
+&--special {
+
+font-size: 14px;
+line-height: 16px;
+
+
+
+color: $color-default-white;
+border-bottom: 1px solid $color-default-white;
+}
+}

@@ -1,0 +1,21 @@
+.gym {
+  margin-bottom: 150px;
+  .gym__container {
+    position: relative;
+
+    display: flex;
+    padding-top: 120px;
+  }
+
+  .gym__img {
+    flex-shrink: 0;
+    width: 55%;
+    height: fit-content;
+    margin-left: 85px;
+  }
+  .gym__video {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+  }
+}

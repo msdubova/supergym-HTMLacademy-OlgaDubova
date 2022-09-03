@@ -1,0 +1,10 @@
+.socials {
+  ul {
+    @include reset-ul;
+    display: flex;
+  }
+
+  li {
+    margin-left: 11px;
+  }
+}

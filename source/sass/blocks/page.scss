@@ -9,10 +9,21 @@
   font-size: 16px;
   line-height: 24px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: $color-default-black;
+  color: $color-primary-black;
   letter-spacing: 0;
 
   scroll-behavior: smooth;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.page__main {
+  flex-grow: 1;
 }
 
 .page a,
@@ -45,16 +56,32 @@
 .page h1,
 .page h2,
 .page h3 {
+  display: block;
+  text-align: center;
   font-weight: 700;
   font-family: "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
+  // color: $color-primary-black;
 }
 
-.page__body {  background-color: violet;
-  display: flex;
-  flex-direction: column;
+
+
+.page h1 {
+  font-size: 109px;
+    line-height: 109px;
+}
+.page h2 {
+
+font-size: 49px;
+line-height: 49px;
+
 }
 
-.page__main {
-  flex: 1 0 auto;
+// .page h3 {
+
+// }
+
+.page svg {
+  display: inline-block;
+  vertical-align: middle;
 }
