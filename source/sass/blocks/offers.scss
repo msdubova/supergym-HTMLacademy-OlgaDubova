@@ -1,16 +1,40 @@
 .offers {
+  h2 {
+    margin-bottom: 52px;
+  }
+
   img {
     display: block;
-    min-height: 462px;
     height: 100%;
-    overflow: hidden;
+
+    object-fit: cover;
   }
+
   h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+
     font-size: 26px;
-line-height: 26px;
-margin-top: 0;
-text-align: left;
+    line-height: 26px;
+    text-align: left;
   }
+p {
+  margin: 0;
+}
+  a {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+
+  .offers__container {
+    padding: 70px 105px 20px 101px;
+  }
+
+  .offers__img {
+    flex-shrink: 0;
+    width: 50%;
+  }
+
   .offers__wrapper {
     display: flex;
     justify-content: space-between;;
@@ -19,25 +43,77 @@ text-align: left;
   .offers__box {
     display: flex;
     flex-direction: column;
-    width: 560px;
     justify-content: space-between;
+    width: 560px;
+
     &--special {
       flex-direction: row;
+
       background-color: $color-primary-red;
     }
   }
 
   .offers__block {
-    border: 7px solid purple;
     min-height: 211px;
-padding: 35px;
+    padding: 28px;
+
+    border: solid;
+    border-width: 7px;
+    border-image-source: $gradient-border;
+    border-image-slice: 1;
+
+    display: flex;
+    flex-direction: column;
+
+
   }
 
   .offers__info {
-    padding: 45px;
-    color: $color-default-white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 45px;
+
+    color: $color-default-white;
+  }
+}
+
+
+.offers__box--special {
+  h3 {
+    position: relative;
+
+    margin-top: 7px;
+    margin-bottom: 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 109px;
+    font-family: "Roboto Condensed";
+    letter-spacing: 0.01em;
+
+    &::before {
+      content: "Год";
+      position: absolute;
+      top: -17.5%;
+
+      font-size: 28px;
+      line-height: 44px;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Roboto Condensed";
+  }
+
+  a {
+    margin-top: auto;
   }
 }
