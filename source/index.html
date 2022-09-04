@@ -9,8 +9,8 @@
   <title>SUPERGYM</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-condensed-v25-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-condensed-v25-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/bebas-neue-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/bebas-neue-bold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -34,7 +34,7 @@
         <div class="header__info">
           <h1>Фитнес центр</h1>
           <h2 class="visually-hidden">
-            Фитнес-клуб Super в городе Омск
+            Фитнес-клуб Super в&nbsp;городе Омск
           </h2>
           <h3>Омск</h3>
           <ul class="header__ul">
@@ -68,31 +68,31 @@
             <img width="500" height="556" srcset="img/img-header-desktop-2x.png 2x" src="img/img-header-desktop-1x.png"
               alt="Изображение Фитнес-клуба SuperGym" loading="lazy">
           </picture>
-          <div class=" header__socials socials">
-            <ul>
-              <li>
-                <a href="#" aria-label="Перейти в сообщество Фитнес-клуба SuperGym в Facebook">
-                  <svg width="13" height="9" role="img" aria-label="Facebook">
-                    <use xlink:href="img/sprite_auto.svg#logo-fb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Перейти в сообщество Фитнес-клуба SuperGym во Vkontakte">
-                  <svg width="14" height="9" role="img" aria-label="Vkontakte">
-                    <use xlink:href="img/sprite_auto.svg#logo-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Перейти на страницу Фитнес-клуба SuperGym в Instagram">
-                  <svg width="11" height="9" role="img" aria-label="Instagram">
-                    <use xlink:href="img/sprite_auto.svg#logo-ig"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+
+          <ul class=" header__socials">
+            <li>
+              <a href="#" aria-label="Перейти в сообщество Фитнес-клуба SuperGym в Facebook">
+                <svg width="13" height="9" role="img" aria-label="Facebook">
+                  <use xlink:href="img/sprite_auto.svg#logo-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Перейти в сообщество Фитнес-клуба SuperGym во Vkontakte">
+                <svg width="14" height="9" role="img" aria-label="Vkontakte">
+                  <use xlink:href="img/sprite_auto.svg#logo-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Перейти на страницу Фитнес-клуба SuperGym в Instagram">
+                <svg width="11" height="9" role="img" aria-label="Instagram">
+                  <use xlink:href="img/sprite_auto.svg#logo-ig"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
         </div>
       </div>
     </div>
@@ -104,14 +104,17 @@
           <h2>
             Тренажерный зал
           </h2>
-          <h3>
-            Просторный зал площадью 900 кв/м
-          </h3>
+          <span>
+            Просторный зал площадью 900&nbsp;кв/м
+          </span>
           <p>
-            Supergym - самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+            Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+            и&nbsp;здоровья.
             Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-
-            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+          </p>
+          <p>
+            В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+            в&nbsp;фитнес центре есть
             несколько оборудованных залов для различных видов групповых занятий.
           </p>
         </div>
@@ -194,168 +197,154 @@
         <h2>АБОНЕМЕНТЫ</h2>
 
 
-        <div class="subscription__buttons">
-
+        <div class="subscription__nav subscription__nav--nojs">
+          <button data-tab="#tab_1" class="subscription__option" type="button">1 месяц</button>
+          <button data-tab="#tab_2" class="subscription__option " type="button">6 месяцев</button>
+          <button data-tab="#tab_3" class="subscription__option " type="button">12 месяцев</button>
         </div>
         <div class="subscription__tabs">
-          <ul>
-            <h3>
-              1 месяц
-            </h3>
+          <ul id="tab_1">
             <li>
-              <a href="#" aria-label="Купить абонемент на 12 занятий с тренером в SuperGym сроком на 1 месяц">
-                <h4>
-                  С тренером
-                </h4>
-                <span>
-                  12 занятий
-                </span>
-                <p>
-                  5000 P
-                </p>
-                <a class="button button--gradient" type="button">
-                  Купить абонемент
-                </a>
+              <h3>
+                1 месяц
+              </h3>
+              <h4>
+                С тренером
+              </h4>
+              <span>
+                12 занятий
+              </span>
+              <p>
+                5000 &#x20bd;
+              </p>
+              <a class="subscription__button button" type="button">
+                Купить абонемент
               </a>
             </li>
             <li>
-              <a href="#" aria-label="Купить дневной абонемент в SuperGym сроком на 1 месяц">
-                <h4>
-                  Дневной
-                </h4>
-                <span>
-                  с 8:00 до 17:00
-                </span>
-                <p>
-                  1700 P
-                </p>
-                <a class="button button--gradient" type="button">
-                  Купить абонемент
-                </a>
+              <h3>
+                6&nbsp;месяцев
+              </h3>
+              <h4>
+                Дневной
+              </h4>
+              <span>
+                с 8:00 до 17:00
+              </span>
+              <p>
+                1700 &#x20bd;
+              </p>
+              <a class="subscription__button button" type="button">
+                Купить абонемент
+              </a>
 
+
+            </li>
+            <li>
+              <h3>
+                12&nbsp;месяцев
+              </h3>
+
+              <h4>
+                Полный день
+              </h4>
+              <span>
+                с 8:00 до 22:00
+              </span>
+              <p>
+                2700 &#x20bd;
+              </p>
+              <a class="subscription__button button" type="button">
+                Купить абонемент
+              </a>
+
+            </li>
+          </ul>
+          <ul id="tab_2">
+            <li>
+              <h4>
+                С&nbsp;тренером
+              </h4>
+              <span>
+                12&nbsp;занятий
+              </span>
+              <p>
+                7000 &#x20bd;
+              </p>
+              <a class="subscription__button button" type="button">
+                Купить абонемент
               </a>
             </li>
             <li>
-              <a href="#" aria-label="Купить абонемент на полный день в SuperGym сроком на 1 месяц">
-                <h4>
-                  Полный день
-                </h4>
-                <span>
-                  с 8:00 до 22:00
-                </span>
-                <p>
-                  2700 P
-                </p>
-                <a class="button button--gradient" type="button">
-                  Купить абонемент
-                </a>
+              <h4>
+                Дневной
+              </h4>
+              <span>
+                с&nbsp;8:00 до&nbsp;17:00
+              </span>
+              <p>
+                4500 &#x20bd;
+              </p>
+              <a class="subscription__button button" type="button">
+                Купить абонемент
+              </a>
+            </li>
+            <li>
+              <h4>
+                Полный день
+              </h4>
+              <span>
+                с&nbsp;8:00 до&nbsp;22:00
+              </span>
+              <p>
+                4800 &#x20bd;
+              </p>
+              <a class="subscription__button button" type="button">
+                Купить абонемент
               </a>
             </li>
           </ul>
-          <ul>
-            <h3>
-              6 месяцев
-            </h3>
+          <ul id="tab_3">
             <li>
-              <a href="#"
-                aria-label="Купить абонемент на 12 занятий с тренером ежемесячно в SuperGym сроком на 6 месяцев">
-                <h4>
-                  С тренером
-                </h4>
-                <span>
-                  12 занятий
-                </span>
-                <p>
-                  5000P
-                </p>
-                <a class="button button--gradient" type="button">
-                  Купить абонемент
-                </a>
+              <h4>
+                С&nbsp;тренером
+              </h4>
+              <span>
+                12&nbsp;занятий
+              </span>
+              <p>
+                9000 &#x20bd;
+              </p>
+              <a class="subscription__button button" type="button">
+                Купить абонемент
               </a>
             </li>
             <li>
-              <a href="#" aria-label="Купить дневной абонемент в SuperGym сроком на 6 месяцев">
-                <h4>
-                  Дневной
-                </h4>
-                <span>
-                  с 8:00 до 17:00
-                </span>
-                <p>
-                  4500 P
-                </p>
-                <a class="button button--gradient" type="button">
-                  Купить абонемент
-                </a>
+              <h4>
+                Дневной
+              </h4>
+              <span>
+                с&nbsp;8:00 до&nbsp;17:00
+              </span>
+              <p>
+                5000 &#x20bd;
+              </p>
+              <a class="subscription__button button" type="button">
+                Купить абонемент
               </a>
             </li>
             <li>
-              <a href="#" aria-label="Купить абонемент на полный день в SuperGym сроком на 6 месяцев">
-                <h4>
-                  Полный день
-                </h4>
-                <span>
-                  с 8:00 до 22:00
-                </span>
-                <p>
-                  4800 P
-                </p>
-                <a class="button button--gradient" type="button">
-                  Купить абонемент
-                </a>
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <h3>
-              12 месяцев
-            </h3>
-            <li>
-              <a href="#" aria-label="Купить абонемент на 12 занятий с тренером ежемесячно в SuperGym сроком на 1 год">
-                <h4>
-                  С тренером
-                </h4>
-                <span>
-                  12 занятий
-                </span>
-                <p>
-                  9000 P
-                </p>
-                <a class="button button--gradient" type="button">
-                  Купить абонемент
-                </a>
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Купить дневной абонемент в SuperGym сроком на 1 год">
-                <h4>
-                  Дневной
-                </h4>
-                <span>
-                  с 8:00 до 17:00
-                </span>
-                <p>
-                  5000 P
-                </p>
-                <a class="button button--gradient" type="button">
-                  Купить абонемент
-                </a>
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Купить полный абонемент в SuperGym сроком на 1 год">
-                <h4>
-                  Полный день
-                </h4>
-                <span>
-                  с 8:00 до 22:00
-                </span>
-                <p>
-                  7000 P
-                </p>
-                <a class="button button--gradient" type="button">
-                  Купить абонемент
-                </a>
+              <h4>
+                Полный день
+              </h4>
+              <span>
+                с 8:00 до 22:00
+              </span>
+              <p>
+                7000 &#x20bd;
+              </p>
+              <a class="subscription__button button" type="button">
+                Купить абонемент
               </a>
             </li>
           </ul>
@@ -368,7 +357,7 @@
       <div class="application__container container">
         <div class="application__block">
           <div class="application__wrapper">
-            <div>
+            <div class="application__info">
               <h2>
                 SUPER GAMES
               </h2>
@@ -397,11 +386,12 @@
               </div>
             </div>
             <p>
-              Ежегодные соревнования по CrossFit
+              Ежегодные соревнования по&nbsp;CrossFit
             </p>
           </div>
           <a href="#" aria-label="Перейти на страницу подачи заявки на участие в соревнованиях по CrossFit"
-            class="button">Заполнить
+            class="button">
+            Заполнить
             заявку
           </a>
 
@@ -504,7 +494,7 @@
             </div>
             <div>
               <p>
-                Современные тренажеры на все группы мышц
+                Современные тренажеры на&nbsp;все группы мышц
               </p>
             </div>
           </div>
@@ -542,7 +532,7 @@
                   Тренерский опыт
                 </h3>
                 <p>
-                  Добивайтесь своих целей быстрее с профессиональным тренером
+                  Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером
                 </p>
               </div>
             </div>
@@ -566,7 +556,7 @@
                 4999
               </h3>
               <p>
-                Безлимитный абонемент в тренажерный зал
+                Безлимитный абонемент в&nbsp;тренажерный зал
               </p>
               <a href="#" class="link link--special">
                 Подробнее
@@ -604,7 +594,7 @@
                 Месяц бесплатно
               </h3>
               <p>
-                Приведи друга, получи абонемент в подарок
+                Приведи друга, получи абонемент в&nbsp;подарок
               </p>
               <a href="#" class="link">
                 Подробнее
@@ -612,10 +602,10 @@
             </div>
             <div class="offers__block">
               <h3>
-                Скидка 20%
+                Скидка&nbsp;20%
               </h3>
               <p>
-                Корпоративный фитнес с командой
+                Корпоративный фитнес с&nbsp;командой
               </p>
               <a href="#" class="link">
                 Подробнее
@@ -679,7 +669,7 @@
                   Адрес:
                 </h4>
                 <p>
-                  г. Омск, ул. 60 лет Октября, 7
+                  г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7
                 </p>
               </div>
               <div>
@@ -687,7 +677,7 @@
                   График работы:
                 </h4>
                 <p>
-                  Пн-Вс: с 8:00 до 22:00
+                  Пн-Вс: с&nbsp;8:00 до&nbsp;22:00
                 </p>
               </div>
             </div>

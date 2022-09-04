@@ -70,16 +70,18 @@
   font-size: 109px;
     line-height: 109px;
 }
-.page h2 {
 
+.page h2 {
+margin-top: 48px;
+margin-bottom: 10px;
 font-size: 49px;
 line-height: 49px;
 
 }
 
-// .page h3 {
-
-// }
+.page h3 {
+margin-top: 0;
+}
 
 .page svg {
   display: inline-block;
