@@ -1,3 +1,22 @@
 .coaches {
   min-height: 585px;
+
+  ul {
+    @include reset-ul;
+  }
+
+  .coaches__slider {
+    position: relative;;
+  }
+
+  .coaches__wrapper {
+    height: 300px;
+  }
+  .coaches__item {
+    position: relative;
+
+    width: 260px;
+
+    background-color: palevioletred;
+  }
 }

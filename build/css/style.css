@@ -1507,6 +1507,34 @@ button,
   margin-left: 11px;
 }
 
+.slider {
+  position: relative;
+}
+
+.slider .slider__button {
+  width: 16px;
+  height: 32px;
+  background-color: transparent;
+  background-image: url("../../img/sprite/vector.svg");
+  border: none;
+  cursor: pointer;
+}
+
+.slider .slider__button::after {
+  display: none;
+}
+
+.slider .slider__button--previous {
+  left: 47px;
+}
+
+.slider .slider__button--next {
+  right: 47px;
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
 .header {
   color: #ffffff;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
@@ -2010,6 +2038,26 @@ button,
   min-height: 585px;
 }
 
+.coaches ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.coaches .coaches__slider {
+  position: relative;
+}
+
+.coaches .coaches__wrapper {
+  height: 300px;
+}
+
+.coaches .coaches__item {
+  position: relative;
+  width: 260px;
+  background-color: palevioletred;
+}
+
 .advantages {
   background-color: #F8F9FC;
 }
@@ -2340,10 +2388,6 @@ button,
   vertical-align: middle;
 }
 
-.reviews .reviews__slider {
-  position: relative;
-}
-
 .reviews .reviews__wrapper {
   min-height: 242px;
   margin: 0 26%;
@@ -2369,26 +2413,12 @@ button,
   margin-right: 25px;
 }
 
-.reviews .reviews__button {
-  position: absolute;
-  bottom: 106px;
-  background-color: transparent;
-  border: none;
-}
-
-.reviews .reviews__button::after {
-  display: none;
-}
-
 .reviews .reviews__button--previous {
   left: 20.5%;
 }
 
 .reviews .reviews__button--next {
   right: 20.5%;
-  -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);
 }
 
 .feedback {

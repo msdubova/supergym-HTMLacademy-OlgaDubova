@@ -43,8 +43,9 @@
 
     vertical-align: middle;
   }
-  .reviews__slider {
-    position: relative;
+
+  .reviews__container {
+
   }
 
   .reviews__wrapper {
@@ -65,23 +66,12 @@
   }
 
   .reviews__button {
-    position: absolute;
-    bottom: 106px;
-
-    background-color: transparent;
-    border: none;
-    // cursor: pointer;
-    &::after {
-      display: none;
-    }
     &--previous {
       left: 20.5%;
     }
 
     &--next {
       right: 20.5%;
-
-      transform: scale(-1, 1) ;
     }
   }
 }

@@ -1,0 +1,30 @@
+.slider {
+  position: relative;
+  .slider__wrapper {
+    // display: flex;
+  }
+
+  .slider__button {
+    width: 16px;
+    height: 32px;
+
+    background-color: transparent;
+    background-image: url("../../img/sprite/vector.svg");
+    border: none;
+    cursor: pointer;
+
+    &::after {
+      display: none;
+    }
+
+    &--previous {
+      left: 47px;
+    }
+
+    &--next {
+      right: 47px;
+
+      transform: scale(-1, 1) ;
+    }
+  }
+}
