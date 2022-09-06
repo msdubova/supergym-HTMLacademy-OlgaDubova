@@ -52,8 +52,7 @@
 }
 
 .page h1,
-.page h2,
-.page h3 {
+.page h2 {
   display: block;
 
   font-weight: 700;
@@ -63,7 +62,16 @@
   // color: $color-primary-black;
 }
 
-
+.page h2 {
+  margin-bottom: 52px;
+}
+.page h3 {
+  display: block;
+  font-weight: 700;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-align: center;
+  letter-spacing: 0em;
+}
 
 .page h1 {
   font-size: 109px;

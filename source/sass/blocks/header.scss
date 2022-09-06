@@ -14,6 +14,7 @@
   }
 
   h1 {
+    -webkit-text-stroke: 2px $color-default-white;
     order: 2;
     width: 300px;
     margin: 0;
@@ -26,15 +27,18 @@
     // border: 2px solid $color-default-white;
   }
 
-  h3 {
+  h2 {
     order: 1;
+    margin-top: 0;
     margin-bottom: 5px;
-
     font-weight: 400;
+
     font-size: 49px;
     line-height: 59px;
     text-align: right;
     color: $color-default-white;
+    text-transform: uppercase;
+
   }
 
   .header__container {
@@ -75,7 +79,7 @@
 
   .header__ul {
     position: absolute;
-    top: 54.5%;
+    top: 54.6%;
     left: 20px;
 
     display: flex;
@@ -90,7 +94,7 @@
   .header__button {
     order: 3;
     align-self: flex-end;
-    width: 77.5%;
+    width: 78%;
   }
 
   .header__img {

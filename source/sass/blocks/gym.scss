@@ -7,12 +7,14 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    letter-spacing: 0.01em;
+
   }
 
   p {
     margin-top: 0;
     margin-bottom: 8px;
+    letter-spacing: -0.01em;
+
   }
 
   .gym__container {
@@ -27,13 +29,14 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 60px;
+    padding-right: 40px;
   }
 
   .gym__img {
     flex-shrink: 0;
     width: 56.9%;
     height: fit-content;
-    margin-left: 58px;
+    margin-left: 40px;
   }
 
   .gym__video {

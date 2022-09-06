@@ -1,5 +1,5 @@
 .offers {
-  margin-bottom: 99px;
+  margin-bottom: 98px;
 
   h2 {
     margin-bottom: 52px;
@@ -14,10 +14,10 @@
 
   h3 {
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     font-size: 26px;
-    line-height: 26px;
+    line-height: 31px;
     text-align: left;
   }
 
@@ -31,7 +31,8 @@
   }
 
   .offers__container {
-    padding: 70px 105px 20px 101px;
+    padding-top: 69px;
+    padding-bottom: 20px;
   }
 
   .offers__img {
@@ -61,8 +62,9 @@
     display: flex;
     flex-direction: column;
     min-height: 211px;
-    padding: 28px;
 
+    padding: 29px;
+   padding-top: 22px;
     border: solid;
     border-width: 7px;
     border-image-source: $gradient-border;
@@ -92,7 +94,6 @@
     font-size: 70px;
     line-height: 109px;
     font-family: "Roboto Condensed";
-    letter-spacing: 0.01em;
 
     &::before {
       content: "Год";

@@ -1394,13 +1394,24 @@ button,
 }
 
 .page h1,
-.page h2,
-.page h3 {
+.page h2 {
   display: block;
   font-weight: 700;
   font-family: "Bebas Neue", "Arial", sans-serif;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.page h2 {
+  margin-bottom: 52px;
+}
+
+.page h3 {
+  display: block;
+  font-weight: 700;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-align: center;
+  letter-spacing: 0em;
 }
 
 .page h1 {
@@ -1544,6 +1555,64 @@ button,
   transform: scale(-1, 1);
 }
 
+.video {
+  width: 364px;
+  height: 228px;
+}
+
+.video .video__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #74819C;
+}
+
+.video .video__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video .video__media {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video .video__button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 78px;
+  height: 78px;
+  padding: 0;
+  background: -o-linear-gradient(45.11deg, #003D85 25.38%, #B80027 74.89%);
+  background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+  border: 0;
+  border-radius: 90%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.video .video__button:hover {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  opacity: 1;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.video--enabled {
+  cursor: pointer;
+}
+
 .header {
   color: #ffffff;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
@@ -1561,6 +1630,7 @@ button,
 }
 
 .header h1 {
+  -webkit-text-stroke: 2px #ffffff;
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
@@ -1572,16 +1642,18 @@ button,
   word-wrap: break-word;
 }
 
-.header h3 {
+.header h2 {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
+  margin-top: 0;
   margin-bottom: 5px;
   font-weight: 400;
   font-size: 49px;
   line-height: 59px;
   text-align: right;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .header .header__container {
@@ -1634,7 +1706,7 @@ button,
 
 .header .header__ul {
   position: absolute;
-  top: 54.5%;
+  top: 54.6%;
   left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1657,7 +1729,7 @@ button,
   order: 3;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  width: 77.5%;
+  width: 78%;
 }
 
 .header .header__img {
@@ -1698,12 +1770,12 @@ button,
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
-  letter-spacing: 0.01em;
 }
 
 .gym p {
   margin-top: 0;
   margin-bottom: 8px;
+  letter-spacing: -0.01em;
 }
 
 .gym .gym__container {
@@ -1726,6 +1798,7 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   padding-left: 60px;
+  padding-right: 40px;
 }
 
 .gym .gym__img {
@@ -1735,7 +1808,7 @@ button,
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-left: 58px;
+  margin-left: 40px;
 }
 
 .gym .gym__video {
@@ -1925,7 +1998,6 @@ button,
   line-height: 90px;
   font-family: "Bebas Neue";
   text-align: left;
-  letter-spacing: 0.03em;
   word-wrap: break-word;
 }
 
@@ -2060,7 +2132,6 @@ button,
   font-size: 18px;
   line-height: 27px;
   font-family: "Roboto Condensed";
-  letter-spacing: 0;
 }
 
 .coaches ul {
@@ -2308,7 +2379,7 @@ button,
 }
 
 .offers {
-  margin-bottom: 99px;
+  margin-bottom: 98px;
 }
 
 .offers h2 {
@@ -2324,9 +2395,9 @@ button,
 
 .offers h3 {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-size: 26px;
-  line-height: 26px;
+  line-height: 31px;
   text-align: left;
 }
 
@@ -2341,7 +2412,8 @@ button,
 }
 
 .offers .offers__container {
-  padding: 70px 105px 20px 101px;
+  padding-top: 69px;
+  padding-bottom: 20px;
 }
 
 .offers .offers__img {
@@ -2390,7 +2462,8 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 211px;
-  padding: 28px;
+  padding: 29px;
+  padding-top: 22px;
   border: solid;
   border-width: 7px;
   border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
@@ -2421,7 +2494,6 @@ button,
   font-size: 70px;
   line-height: 109px;
   font-family: "Roboto Condensed";
-  letter-spacing: 0.01em;
 }
 
 .offers__box--special h3::before {
@@ -2450,7 +2522,7 @@ button,
 }
 
 .reviews h2 {
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .reviews h3 {

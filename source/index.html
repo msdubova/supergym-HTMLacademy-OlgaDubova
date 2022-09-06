@@ -35,10 +35,8 @@
 
         <div class="header__info">
           <h1>Фитнес центр</h1>
-          <h2 class="visually-hidden">
-            Фитнес-клуб Super в&nbsp;городе Омск
-          </h2>
-          <h3>Омск</h3>
+
+          <h2>Омск</h2>
           <ul class="header__ul">
             <li>
               Тренажерный зал
@@ -115,7 +113,7 @@
             Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
           </p>
           <p>
-            В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+            В&nbsp;зале расположены отдельная зона для Crossfit &nbsp;и кардио-зона с&nbsp;40&nbsp;тренажерами. Также
             в&nbsp;фитнес центре есть
             несколько оборудованных залов для различных видов групповых занятий.
           </p>
@@ -140,41 +138,48 @@
           </picture>
         </div>
 
+        <div class="gym__video video">
+          <div class="video__container">
+            <div class="video__cover">
+              <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                <picture>
+                  <!-- 1x: 320x167; 2x: 640x334 -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/img-video-mobile-2x.webp 2x, img/img-video-mobile-1x.webp 1x">
+                  <!-- 1x: 266x167; 2x: 532x334 -->
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/img-video-tablet-2x.webp 2x, img/img-video-tablet-1x.webp 1x">
+                  <!-- 1x: 364x228; 2x: 728x456 -->
+                  <source type="image/webp" srcset="img/img-video-desktop-2x.webp 2x, img/img-video-desktop-1x.webp 1x">
+                  <!-- 1x: 320x167; 2x: 640x334 -->
+                  <source media="(max-width: 767px)"
+                    srcset="img/img-video-mobile-2x.png 2x, img/img-video-mobile-1x.png 1x">
+                  <!-- 1x: 266x167; 2x: 532x334 -->
+                  <source media="(max-width: 1199px)"
+                    srcset="img/img-video-tablet-2x.png 2x, img/img-video-tablet-1x.png 1x">
+                  <!-- 1x: 364x228; 2x: 728x456 -->
+                  <img width="364" height="228" srcset="img/img-video-desktop-2x.png 2x"
+                    src="img/img-video-desktop-1x.png" alt="Обложка видеоролика SuperGym">
+                </picture>
+              </a>
 
-        <div class="gym__video">
-          <picture>
-            <!-- 1x: 320x167; 2x: 640x334 -->
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/img-video-mobile-2x.webp 2x, img/img-video-mobile-1x.webp 1x">
-            <!-- 1x: 266x167; 2x: 532x334 -->
-            <source type="image/webp" media="(max-width: 1199px)"
-              srcset="img/img-video-tablet-2x.webp 2x, img/img-video-tablet-1x.webp 1x">
-            <!-- 1x: 364x228; 2x: 728x456 -->
-            <source type="image/webp" srcset="img/img-video-desktop-2x.webp 2x, img/img-video-desktop-1x.webp 1x">
-            <!-- 1x: 320x167; 2x: 640x334 -->
-            <source media="(max-width: 767px)" srcset="img/img-video-mobile-2x.png 2x, img/img-video-mobile-1x.png 1x">
-            <!-- 1x: 266x167; 2x: 532x334 -->
-            <source media="(max-width: 1199px)" srcset="img/img-video-tablet-2x.png 2x, img/img-video-tablet-1x.png 1x">
-            <!-- 1x: 364x228; 2x: 728x456 -->
-            <img width="364" height="228" srcset="img/img-video-desktop-2x.png 2x" src="img/img-video-desktop-1x.png"
-              alt="Обложка видеоролика SuperGym">
-          </picture>
+            </div>
 
-
-
-          <div class="">
-
-            <!-- <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <!-- <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?start=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0"  allowfullscreen autoplay></iframe>
-          </div> -->
-            <!-- <button data-video-button type="button" aria-label="Воспроизвести презентационный видео-ролик SuperGym"
-            tabindex="100">
-            <svg width="13" height="15">
-              <use xlink:href="#icon-play"></use>
-            </svg>
-          </button> -->
+            <!-- <div class="video__block">
+              <iframe src="http://www.youtube.com/embed/9TZXsZItgdw?start=0&autoplay=1&loop=1&playlist=9TZXsZItgdw"
+                width="364" height="228" title="Бесплатные интерактивные онлайн-курсы" frameborder="0" allowfullscreen
+                llow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div> -->
+            <button class="video__button" data-video-button type="button"
+              aria-label="Воспроизвести презентационный видео-ролик SuperGym" tabindex="100">
+              <svg width="17" height="17">
+                <use xlink:href="img/sprite_auto.svg#icon-play"></use>
+              </svg>
+            </button>
           </div>
+
         </div>
+
       </div>
     </section>
     <section class="subscription" id="subscriptions">

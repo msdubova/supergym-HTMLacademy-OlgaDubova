@@ -91,3 +91,34 @@ function setTab() {
 }
 
 setTab();
+
+function setupVideo() {
+  let video = document.querySelector('.video__container');
+  let link = video.querySelector('.video__link');
+  let button = video.querySelector('.video__button');
+
+  button.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    let iframe = createIframe();
+    link.remove();
+    button.remove();
+    video.appendChild(iframe);
+  });
+
+  link.removeAttribute('href');
+  video.classList.add('video--enabled');
+}
+
+
+function createIframe() {
+  let iframe = document.createElement('iframe');
+
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('allow', 'autoplay');
+  iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1');
+  iframe.classList.add('video__media');
+
+  return iframe;
+}
+
+setupVideo();
