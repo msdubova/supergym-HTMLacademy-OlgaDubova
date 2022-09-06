@@ -1,20 +1,26 @@
 .footer {
-  background-color: $color-default-black;
   color: $color-default-white;
 
+  background-color: $color-default-black;
+
+  .footer__logo {
+    padding-top: 4px;
+  }
+
   ul {
-
     @include reset-ul;
+  }
 
+  a {
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .footer__container {
-    padding-top: 44px;
-    padding-bottom: 44px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding-top: 41px;
+    padding-bottom: 42px;
   }
-
-
 }

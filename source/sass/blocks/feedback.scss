@@ -1,8 +1,22 @@
 .feedback {
   background: $gradient-feedback;
 
+  h4 {
+    margin-top: 16px;
+    margin-bottom: 4px;
+  }
+
+  p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   .feedback__container {
     display: flex;
+
+    border-top: 1px solid $color-darkgrey;
   }
 
   .feedback__block {
@@ -10,6 +24,9 @@
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+    padding-top: 20px;
+    padding-bottom: 58px;
+
     &--form {
       color: $color-default-white;
     }
@@ -21,25 +38,27 @@
 
   .feedback__wrapper {
     display: flex;
-    justify-content: space-between;
     width: 100%;
+    padding-top: 15px;
+    padding-left: 3px;
   }
 
-
   .feedback__box {
+    padding-left: 58px;
     &--border {
       position: relative;
 
-      width: 60%;
+      width: 51%;
+      padding-left: 0;
 
       &::after {
         content: "";
         position: absolute;
-        top: 20%;
+        top: 19%;
         right: 0;
 
         width: 1px;
-        height: 60%;
+        height: 77%;
 
         background: $color-darkgrey;
       }

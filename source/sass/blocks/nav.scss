@@ -1,16 +1,20 @@
 .nav {
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-
-
- a {
-  color: inherit;
-  padding: 10px;
- }
-
- ul {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 30px 0 68px;
 
- }
+  a {
+    padding: 10px;
+
+    color: inherit;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin-right: 20px;
+  }
 }

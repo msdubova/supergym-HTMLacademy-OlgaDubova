@@ -1,5 +1,4 @@
 .page {
-
   box-sizing: border-box;
   min-width: 320px;
   height: 100%;
@@ -19,7 +18,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-
 }
 
 .page__main {
@@ -57,9 +55,10 @@
 .page h2,
 .page h3 {
   display: block;
-  text-align: center;
+
   font-weight: 700;
   font-family: "Bebas Neue", "Arial", sans-serif;
+  text-align: center;
   letter-spacing: 0.03em;
   // color: $color-primary-black;
 }
@@ -68,22 +67,23 @@
 
 .page h1 {
   font-size: 109px;
-    line-height: 109px;
+  line-height: 109px;
 }
 
 .page h2 {
-margin-top: 48px;
-margin-bottom: 10px;
-font-size: 49px;
-line-height: 49px;
+  margin-top: 48px;
+  margin-bottom: 10px;
 
+  font-size: 49px;
+  line-height: 49px;
 }
 
 .page h3 {
-margin-top: 0;
+  margin-top: 0;
 }
 
 .page svg {
   display: inline-block;
+
   vertical-align: middle;
 }

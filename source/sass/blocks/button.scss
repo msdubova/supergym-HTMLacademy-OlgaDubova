@@ -1,6 +1,5 @@
 .button {
   display: inline-block;
-  vertical-align: middle;
   align-items: center;
   margin: 10px 0;
   padding: 20px;
@@ -9,7 +8,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-
+  vertical-align: middle;
   text-align: center;
   color: $color-default-white;
   text-transform: uppercase;

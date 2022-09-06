@@ -1479,8 +1479,13 @@ button,
 
 .nav {
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px 0 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .nav a {
@@ -1492,6 +1497,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
 }
 
 .socials ul {
@@ -2034,8 +2043,24 @@ button,
   flex-direction: column;
 }
 
-.coaches {
-  min-height: 585px;
+.coaches .coaches__container {
+  padding-top: 70px;
+  padding-bottom: 115px;
+}
+
+.coaches h2 {
+  margin-bottom: 52px;
+  text-align: left;
+}
+
+.coaches h3 {
+  margin-right: 7px;
+  margin-top: 22px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Roboto Condensed";
 }
 
 .coaches ul {
@@ -2055,7 +2080,91 @@ button,
 .coaches .coaches__item {
   position: relative;
   width: 260px;
-  background-color: palevioletred;
+  height: 294px;
+  overflow: hidden;
+}
+
+.coaches .coaches__item:hover::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 38, 84, 0.89);
+}
+
+.coaches .coaches__item:hover .coaches__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coaches .coaches__img {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.coaches .coaches__info {
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 30px 40px 22px 48px;
+  color: #ffffff;
+}
+
+.coaches .coaches__button {
+  top: 253px;
+}
+
+.coaches .coaches__skills {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: none;
+}
+
+.coaches__skills {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.coaches__skills h4 {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin-top: 0;
+  margin-bottom: 35px;
+  margin-right: 7px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Roboto Condensed";
+  color: #B6BDCC;
+}
+
+.coaches__skills li {
+  margin-bottom: 13px;
+  margin-left: 23px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .advantages {
@@ -2199,7 +2308,7 @@ button,
 }
 
 .offers {
-  margin-bottom: 100px;
+  margin-bottom: 99px;
 }
 
 .offers h2 {
@@ -2427,10 +2536,22 @@ button,
   background: linear-gradient(to right, #102654 50%, #ffffff 50%);
 }
 
+.feedback h4 {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.feedback p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 .feedback .feedback__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-top: 1px solid #74819C;
 }
 
 .feedback .feedback__block {
@@ -2445,6 +2566,8 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   width: 50%;
+  padding-top: 20px;
+  padding-bottom: 58px;
 }
 
 .feedback .feedback__block--form {
@@ -2459,24 +2582,28 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   width: 100%;
+  padding-top: 15px;
+  padding-left: 3px;
+}
+
+.feedback .feedback__box {
+  padding-left: 58px;
 }
 
 .feedback .feedback__box--border {
   position: relative;
-  width: 60%;
+  width: 51%;
+  padding-left: 0;
 }
 
 .feedback .feedback__box--border::after {
   content: "";
   position: absolute;
-  top: 20%;
+  top: 19%;
   right: 0;
   width: 1px;
-  height: 60%;
+  height: 77%;
   background: #74819C;
 }
 
@@ -2494,7 +2621,10 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0;
+  margin: 0;
+  padding-top: 32px;
   padding-right: 90px;
+  width: 86.5%;
   border: none;
 }
 
@@ -2512,11 +2642,18 @@ button,
 
 .form button {
   width: 100%;
+  margin-top: 28px;
+  padding: 17px;
+  letter-spacing: 0.15em;
 }
 
 .footer {
   background-color: #030A1A;
   color: #ffffff;
+}
+
+.footer .footer__logo {
+  padding-top: 4px;
 }
 
 .footer ul {
@@ -2525,9 +2662,14 @@ button,
   list-style: none;
 }
 
+.footer a {
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .footer .footer__container {
-  padding-top: 44px;
-  padding-bottom: 44px;
+  padding-top: 41px;
+  padding-bottom: 42px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

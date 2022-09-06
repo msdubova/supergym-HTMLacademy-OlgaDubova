@@ -5,7 +5,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 86.5%;
+    margin: 0;
     padding: 0;
+    padding-top: 32px;
     padding-right: 90px;
 
     border: none;
@@ -26,5 +29,9 @@
 
   button {
     width: 100%;
+    margin-top: 28px;
+    padding: 17px;
+
+    letter-spacing: 0.15em;
   }
 }
