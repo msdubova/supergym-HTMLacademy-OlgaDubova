@@ -22,7 +22,8 @@
   }
 
   li {
-    z-index: 2;
+    position: relative;
+    z-index: 3;
 
     display: flex;
     flex-direction: column;
@@ -42,6 +43,17 @@
     }
   }
 
+  b {
+    position: absolute;
+    top: 30%;
+
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px;
+    color: #e8e8e8;
+
+    opacity: 0.48;
+  }
   p {
     position: relative;
 
@@ -52,19 +64,6 @@
     font-size: 60px;
     line-height: 90px;
     color: $color-primary-blue;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      width: 100%;
-      height: 100%;
-
-      background: grey;
-      opacity: 0.5;
-    }
   }
 
   .subscription__container {
@@ -160,7 +159,6 @@
 
 
 .subscription li:hover {
-
   & a {
     color: $color-default-white;
 
