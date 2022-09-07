@@ -57,15 +57,22 @@
   p {
     position: relative;
 
-    margin-top: 64px;
-    margin-bottom: 26px;
+    margin-top: 66px;
+    margin-bottom: 24px;
 
     font-weight: 700;
     font-size: 60px;
     line-height: 90px;
     color: $color-primary-blue;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
+  svg {
+margin-left: 14px;
+  }
   .subscription__container {
     position: relative;
 

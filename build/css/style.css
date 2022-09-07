@@ -1527,6 +1527,7 @@ button,
   height: 32px;
   background-color: transparent;
   background-image: url("../../img/sprite/vector.svg");
+  background-size: contain;
   border: none;
   cursor: pointer;
 }
@@ -1915,12 +1916,25 @@ button,
 
 .subscription p {
   position: relative;
-  margin-top: 64px;
-  margin-bottom: 26px;
+  margin-top: 66px;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
   color: #103AAE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.subscription svg {
+  margin-left: 14px;
 }
 
 .subscription .subscription__container {
@@ -2055,6 +2069,7 @@ button,
 }
 
 .application span {
+  margin-top: 3px;
   word-wrap: break-word;
 }
 
@@ -2107,7 +2122,7 @@ button,
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  padding: 83px 77px 20px 77px;
+  padding: 83px 75px 20px 78px;
   background: #ED0233;
 }
 
@@ -2142,6 +2157,24 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.application__data p:last-of-type {
+  position: relative;
+}
+
+.application__data p:last-of-type::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 90%;
+  height: 1px;
+  background: #ffffff;
+}
+
+.application__data--time p:last-of-type::before {
+  width: 68%;
 }
 
 .coaches .coaches__container {
@@ -2289,6 +2322,7 @@ button,
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+  letter-spacing: 0.01em;
 }
 
 .advantages span:first-child {
@@ -2310,7 +2344,7 @@ button,
 
 .advantages .advantages__container {
   padding-top: 70px;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
 }
 
 .advantages .advantages__wrapper {
@@ -2341,7 +2375,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 42%;
-  padding: 49px 60px 80px 77px;
+  padding: 48px 50px 80px 77px;
 }
 
 .advantages .advantages__item {
@@ -2376,13 +2410,13 @@ button,
 .advantages__block--special {
   position: absolute;
   top: 15%;
-  left: calc(50% - 121px);
+  left: calc(50% - 119px);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
   width: 240px;
-  padding: 50px 34px;
+  padding: 50px 35px;
   text-align: center;
   color: #ffffff;
   background-color: #102654;
@@ -2555,13 +2589,14 @@ button,
 }
 
 .reviews h3 {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+  letter-spacing: 0.03em;
 }
 
 .reviews p {
   margin: 0;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 23px;
   letter-spacing: 0.06;
 }
 
@@ -2579,7 +2614,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 62px 55px 57px 62px;
+  padding: 58px 62px 56px 62px;
   color: #ffffff;
   background-color: #1C3374;
 }
@@ -2600,7 +2635,7 @@ button,
 
 .reviews .reviews__wrapper {
   min-height: 242px;
-  margin: 0 26%;
+  margin: 0 25.85%;
 }
 
 .reviews .reviews__info {
@@ -2620,15 +2655,20 @@ button,
 .reviews .reviews__img {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  margin-right: 25px;
+  margin-top: 4px;
+  margin-right: 27px;
+}
+
+.reviews .reviews__button {
+  top: 53%;
 }
 
 .reviews .reviews__button--previous {
-  left: 20.5%;
+  left: 242px;
 }
 
 .reviews .reviews__button--next {
-  right: 20.5%;
+  right: 242px;
 }
 
 .feedback {
@@ -2783,7 +2823,7 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   padding-top: 41px;
-  padding-bottom: 42px;
+  padding-bottom: 41px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

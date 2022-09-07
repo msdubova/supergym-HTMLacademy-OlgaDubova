@@ -32,6 +32,8 @@
   }
 
   span {
+    margin-top: 3px;
+
     word-wrap: break-word;
 
     &:first-child {
@@ -73,7 +75,7 @@
     flex-grow: 1;
     flex-direction: column;
     align-items: stretch;
-    padding: 83px 77px 20px 77px;
+    padding: 83px 75px 20px 78px;
 
     background: $color-primary-red;
   }
@@ -93,5 +95,32 @@
   .application__time {
     display: flex;
     flex-direction: column;
+  }
+}
+
+
+.application__data {
+  & p:last-of-type {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 0;
+
+      width: 90%;
+      height: 1px;
+
+      background: $color-default-white;
+    }
+  }
+
+  &--time {
+    & p:last-of-type {
+      &::before {
+        width: 68%;
+      }
+    }
   }
 }

@@ -21,6 +21,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
+    letter-spacing: 0.01em;
   }
 
 
@@ -44,7 +45,7 @@
 
   .advantages__container {
     padding-top: 70px;
-    padding-bottom: 25px;
+    padding-bottom: 27px;
   }
 
   .advantages__wrapper {
@@ -63,7 +64,7 @@
     display: flex;
     justify-content: space-between;
     width: 42%;
-    padding: 49px 60px 80px 77px;
+    padding: 48px 50px 80px 77px;
   }
 
   .advantages__item {
@@ -76,7 +77,6 @@
 }
 
 .advantages__block:first-of-type {
-
   & > .advantages__box {
     position: relative;
 
@@ -97,11 +97,11 @@
 .advantages__block--special {
   position: absolute;
   top: 15%;
-  left: calc(50% - 121px);
+  left: calc(50% - 119px);
 
   flex-direction: column;
   width: 240px;
-  padding: 50px 34px;
+  padding: 50px 35px;
 
   text-align: center;
   color: $color-default-white;
