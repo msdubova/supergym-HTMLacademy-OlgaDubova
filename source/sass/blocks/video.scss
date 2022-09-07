@@ -2,6 +2,21 @@
   width: 364px;
   height: 228px;
 
+  @include vp-1199 {
+    width: 266px ;
+    height: auto;
+
+    .video__button {
+      width: 52px;
+      height: 52px;
+
+
+      &::after {
+        background-size: cover;
+      }
+    }
+  }
+
   .video__container {
     position: relative;
 
@@ -52,6 +67,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 100;
 
     width: 73px;
     height: 73px;
@@ -88,8 +104,11 @@
     }
 
     & svg {
-      margin-left: 5px;
       margin-bottom: 3px;
+      margin-left: 3px;
+      width: 25%;
+      height: 25%;
+
     }
   }
 }

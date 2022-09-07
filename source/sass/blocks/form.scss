@@ -25,6 +25,11 @@
     background: none;
     border: none;
     border-bottom: $color-darkgrey 1px solid;
+    color: $color-default-white;
+
+    &::placeholder {
+      color: $color-default-white;
+    }
   }
 
   button {

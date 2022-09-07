@@ -3,8 +3,77 @@
 
   background: $gradient-header;
 
+  @include vp-1199 {
+    h1 {
+      margin-bottom: 30px;
+
+      font-size: 86px;
+      line-height: 86px;
+    }
+
+    h2 {
+      margin-bottom: 3px;
+text-align: right;
+      font-size: 34px;
+      line-height: 41px;
+    }
+
+    img {
+      width: 100%;
+      height: fit-content;
+    }
+
+    .header__container {
+      padding-top: 37px;
+      padding-bottom: 74px;
+    }
+
+    .header__top {
+      margin-bottom: 21px;
+    }
+
+    .header__socials {
+      display: none;
+    }
+
+    .header__logo {
+      width: 82px;
+      height: 17px;
+    }
+
+    .header__contact {
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+    }
+
+    .header__intro {
+      margin-top: 0;
+    }
+
+    .header__info {
+      padding: 50px 0 20px 24px;
+    }
+
+    .header__img {
+      flex-grow: 0;
+      justify-content: flex-end;
+      height: fit-content;
+    }
+
+    .header__ul {
+      top: 186px;
+      left: 0;
+    }
+
+    .header__button {
+      width: 62%;
+    }
+  }
+
   & svg {
     display: inline-block;
+    width: 100%;
 
     vertical-align: middle;
   }
@@ -14,7 +83,6 @@
   }
 
   h1 {
-    -webkit-text-stroke: 2px $color-default-white;
     order: 2;
     width: 300px;
     margin: 0;
@@ -24,22 +92,20 @@
     color: $color-default-white;
     word-wrap: break-word;
 
-    // border: 2px solid $color-default-white;
-
+    -webkit-text-stroke: 2px $color-default-white;
   }
 
   h2 {
     order: 1;
     margin-top: 0;
     margin-bottom: 5px;
-    font-weight: 400;
 
+    font-weight: 400;
     font-size: 49px;
     line-height: 59px;
     text-align: right;
     color: $color-default-white;
     text-transform: uppercase;
-
   }
 
   .header__container {
