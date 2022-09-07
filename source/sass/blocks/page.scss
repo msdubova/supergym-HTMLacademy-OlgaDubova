@@ -47,7 +47,7 @@
   }
 
   &:disabled {
-    opacity: 0.1;
+    opacity: 0.2;
   }
 }
 
@@ -62,25 +62,14 @@
   // color: $color-primary-black;
 }
 
-.page h2 {
-  margin-bottom: 52px;
-}
-.page h3 {
-  display: block;
-  font-weight: 700;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  text-align: center;
-  letter-spacing: 0em;
-}
-
 .page h1 {
   font-size: 109px;
-  line-height: 109px;
+  line-height: 110px;
 }
 
 .page h2 {
   margin-top: 48px;
-  margin-bottom: 10px;
+  margin-bottom: 52px;
 
   font-size: 49px;
   line-height: 49px;
@@ -88,7 +77,12 @@
 
 .page h3 {
   margin-top: 0;
+  font-weight: 700;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-align: center;
+  // letter-spacing: 0;
 }
+
 
 .page svg {
   display: inline-block;

@@ -116,11 +116,9 @@
 
   .subscription__img {
     position: absolute;
-    top: 61%;
-    right: 0;
+    top: 59.5%;
+    right: -13.4%;
     z-index: 0;
-
-    transform: scale(1.5);
   }
 
   .subscription__option {
@@ -151,7 +149,7 @@
         width: 100%;
         height: 2px;
 
-        background: red;
+        background: $color-secondary-red;
       }
     }
   }
@@ -160,10 +158,11 @@
 
 .subscription li:hover {
   & a {
+    padding-top: 25px;
+
     color: $color-default-white;
 
     background: $gradient-button;
     border: none;
   }
-
 }
