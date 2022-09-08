@@ -1,6 +1,49 @@
 .advantages {
   background-color: $color-secondary-grey;
 
+  @include vp-1199 {
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    span {
+      &:first-child {
+        font-size: 58px;
+        line-height: 60px;
+      }
+
+      &:last-child {
+      }
+    }
+    .advantages__container {
+      padding-top: 52px;
+      padding-bottom: 94px;
+    }
+
+
+    .advantages__box {
+      width: 48%;
+      padding: 0;
+    }
+
+    .advantages__item {
+      margin-right: 30px;
+      padding: 0;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+
+
+
   h2 {
     margin-bottom: 0;
   }
@@ -80,6 +123,11 @@
   & > .advantages__box {
     position: relative;
 
+    @include vp-1199 {
+      &::after {
+        display: none;
+      }
+    }
     &::after {
       content: "";
       position: absolute;
@@ -107,6 +155,40 @@
   color: $color-default-white;
 
   background-color: $color-primary-black;
+
+  @include vp-1199 {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 65%;
+    margin-top: 45px;
+    margin-right: auto;
+    margin-bottom: 42px;
+    margin-left: auto;
+    padding: 32px;
+    & p {
+      margin-top: 12px;
+      padding: 0 100px;
+
+      font-size: 16px;
+      line-height: 24px;
+    }
+    & div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & span:first-child {
+      font-size: 74px;
+      line-height: 80px;
+    }
+
+    & span:last-child {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
 
   & span:first-child {
     font-size: 74px;

@@ -1,6 +1,58 @@
 .feedback {
   background: $gradient-feedback;
   border-top: 1px solid $color-darkgrey;
+
+  @include vp-1199{
+
+    background: none;
+    border: none;
+
+    h4 {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 12px;
+    }
+
+    p {
+font-size: 18px;
+    }
+    .feedback__container {
+      flex-direction: column;
+      padding: 0;
+      padding-bottom: 22px;
+    }
+
+    .feedback__wrapper {
+      padding: 13px 0;
+
+    }
+    .feedback__block {
+      width: 100%;
+      padding: 21px 163px 30px 133px;
+
+      &--form {
+        background: $color-primary-black;
+      }
+    }
+
+    .feedback__box {
+      min-height: 152px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 47px;
+
+      &--border {
+        padding-left: 0;
+        width: 56.6%;
+      }
+
+      &::after {
+        top: 13%;
+        height: 86%;
+      }
+    }
+  }
   h2 {
     margin-bottom: 10px;
   }

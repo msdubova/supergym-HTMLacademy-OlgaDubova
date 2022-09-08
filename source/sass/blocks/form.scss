@@ -1,6 +1,16 @@
 .form {
   width: 100%;
 
+  @include vp-1199 {
+    fieldset {
+      width: 100%;
+      padding: 27px 0;
+    }
+    p {
+      width: 44%;
+font-size: 14px;
+    }
+  }
   fieldset {
     display: flex;
     flex-wrap: wrap;

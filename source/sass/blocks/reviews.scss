@@ -1,6 +1,39 @@
 .reviews {
   margin-bottom: 120px;
 
+  @include vp-1199 {
+
+   margin-bottom: 100px;
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      width: 566px;
+    }
+
+    li {
+      padding-left: 66px;
+    }
+    .reviews__wrapper {
+
+      margin: 0 8.2%;
+    }
+
+    .reviews__button {
+      top: 53%;
+      &--previous {
+        left: 0.5%;
+      }
+
+      &--next {
+        right: 0.5%;
+      }
+    }
+  }
+
+
+
   h2 {
     margin-bottom: 52px;
   }
@@ -67,11 +100,11 @@
   .reviews__button {
     top: 53%;
     &--previous {
-      left: 242px;
+      left: 20%;
     }
 
     &--next {
-      right: 242px;
+      right: 20%;
     }
   }
 }

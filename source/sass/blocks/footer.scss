@@ -3,10 +3,42 @@
 
   background-color: $color-default-black;
 
+  & svg {
+    display: inline-block;
+width: 100%;
+
+
+    vertical-align: middle;
+  }
+  @include vp-1199 {
+    .footer__container {
+      padding-right: 40px;
+    }
+    .footer__logo{
+
+        width: 82px;
+        height: 17px;
+        flex-shrink: 0;
+
+    }
+
+    .footer__nav {
+      padding: 4px 4px;
+      padding-left: 30px;
+    }
+
+    .footer__socials {
+      padding-top: 4px;
+    }
+  }
   .footer__logo {
     padding-top: 4px;
   }
 
+  .footer__nav {
+
+    padding: 0 30px 0 68px;
+  }
   ul {
     @include reset-ul;
   }

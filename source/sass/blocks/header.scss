@@ -13,14 +13,14 @@
 
     h2 {
       margin-bottom: 3px;
-text-align: right;
+
       font-size: 34px;
       line-height: 41px;
+      text-align: right;
     }
 
     img {
-      width: 100%;
-      height: fit-content;
+      max-height: 556px;
     }
 
     .header__container {
@@ -56,9 +56,13 @@ text-align: right;
     }
 
     .header__img {
-      flex-grow: 0;
+      flex-grow: 1;
       justify-content: flex-end;
-      height: fit-content;
+      margin-left: 30px;
+
+      & > * {
+        flex-grow: 1;
+      }
     }
 
     .header__ul {
@@ -69,6 +73,10 @@ text-align: right;
     .header__button {
       width: 62%;
     }
+  }
+
+  img {
+    object-fit: contain;
   }
 
   & svg {

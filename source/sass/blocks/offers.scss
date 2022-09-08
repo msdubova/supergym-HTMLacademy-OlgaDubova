@@ -1,6 +1,38 @@
 .offers {
   margin-bottom: 98px;
 
+
+  @include vp-1199 {
+    .offers__container {
+      padding-top: 52px;
+      padding-bottom: 0px;
+    }
+
+    .offers__wrapper {
+      flex-direction: column;
+    }
+
+    .offers__box {
+      width: 100%;
+flex-direction: row;
+      &--special {
+        margin-bottom: 30px;
+      }
+    }
+
+    .offers__img {
+      width: 59%;
+    }
+
+    .offers__block {
+width: 48%;
+    }
+    h2 {
+      margin-bottom: 40px;
+    }
+
+
+  };
   h2 {
     margin-bottom: 52px;
   }
@@ -42,7 +74,7 @@
 
   .offers__wrapper {
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
   }
 
   .offers__box {

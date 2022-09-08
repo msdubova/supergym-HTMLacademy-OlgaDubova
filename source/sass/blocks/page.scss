@@ -76,13 +76,14 @@
 
   @include vp-1199 {
     font-size: 42px;
-line-height: 42px;
-text-align: center;
+    line-height: 42px;
+    text-align: center;
   }
 }
 
 .page h3 {
   margin-top: 0;
+
   font-weight: 700;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   text-align: center;
