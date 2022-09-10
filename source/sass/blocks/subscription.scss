@@ -2,7 +2,7 @@
   background-color: $color-secondary-grey;
 
   @include vp-1199 {
-    overflow-x: hidden;
+
     h2 {
       margin-bottom: 15px;
     }
@@ -69,7 +69,7 @@
       font-size: 80px;
     }
     .subscription__container {
-      padding-top: 92px;
+      padding-top: 22px;
       padding-bottom: 35px;
     }
     li {

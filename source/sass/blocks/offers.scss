@@ -28,6 +28,7 @@
 
     .offers__block {
       width: 48%;
+      padding-top: 20px;
     }
     h2 {
       margin-bottom: 40px;
@@ -73,8 +74,11 @@
       align-items: center;
       width: 100%;
       margin-bottom: 30px;
+      padding-top: 32px;
     }
   }
+
+
   h2 {
     margin-bottom: 52px;
   }
@@ -137,7 +141,7 @@
     flex-direction: column;
     min-height: 211px;
     padding: 29px;
-    padding-top: 35px;
+    padding-top: 25px;
 
     border: solid;
     border-width: 7px;

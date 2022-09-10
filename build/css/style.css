@@ -2319,6 +2319,21 @@ button,
   color: #B6BDCC;
 }
 
+.coaches__skills li {
+  position: relative;
+}
+
+.coaches__skills li::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 90%;
+  background-color: #ffffff;
+  left: -15px;
+  top: 8px;
+}
+
 .advantages {
   background-color: #F8F9FC;
 }
@@ -2545,7 +2560,7 @@ button,
   flex-direction: column;
   min-height: 211px;
   padding: 29px;
-  padding-top: 35px;
+  padding-top: 25px;
   border: solid;
   border-width: 7px;
   border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
@@ -3052,10 +3067,6 @@ button,
     left: calc(50% - 133px);
   }
 
-  .subscription {
-    overflow-x: hidden;
-  }
-
   .subscription h2 {
     margin-bottom: 15px;
   }
@@ -3183,9 +3194,18 @@ button,
     padding-bottom: 100px;
   }
 
+  .coaches .coaches__info {
+    left: calc(50% - 134px);
+    width: 268px;
+  }
+
+  .coaches .coaches__img {
+    left: calc(50% - 134px);
+  }
+
   .coaches img {
-    width: 100%;
-    height: auto;
+    width: 268px;
+    height: 294px;
   }
 
   .coaches h2 {
@@ -3196,12 +3216,9 @@ button,
     width: 83.5%;
   }
 
-  .coaches .coaches__item {
+  .coaches .coaches__item:hover::after {
+    left: calc(50% - 134px);
     width: 268px;
-  }
-
-  .coaches li {
-    border: 1px solid red;
   }
 
   .advantages h2 {
@@ -3314,6 +3331,7 @@ button,
 
   .offers .offers__block {
     width: 48%;
+    padding-top: 20px;
   }
 
   .offers h2 {
@@ -3523,6 +3541,11 @@ button,
     margin-right: 11px;
   }
 
+  .slider .slider__button {
+    width: 10px;
+    height: 19px;
+  }
+
   .video .video__cover {
     position: relative;
   }
@@ -3584,7 +3607,7 @@ button,
   }
 
   .gym {
-    min-height: auto;
+    min-height: 925px;
   }
 
   .gym h2 {
@@ -3651,7 +3674,7 @@ button,
   }
 
   .subscription .subscription__container {
-    padding-top: 92px;
+    padding-top: 22px;
     padding-bottom: 35px;
   }
 
@@ -3712,9 +3735,24 @@ button,
     width: 100%;
   }
 
+  .coaches h4 {
+    margin-right: 25px;
+  }
+
+  .coaches li {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 13px;
+    letter-spacing: 0em;
+  }
+
+  .coaches li:last-child {
+    margin-bottom: 0;
+  }
+
   .coaches .coaches__container {
     padding-top: 22px;
-    padding-bottom: 70px;
+    padding-bottom: 58px;
   }
 
   .coaches .coaches__slider {
@@ -3725,13 +3763,42 @@ button,
     height: 274px;
   }
 
-  .coaches li {
-    height: 274px;
+  .coaches .coaches__item:hover::after {
+    left: calc(50% - 113px);
+    width: 226px;
+  }
+
+  .coaches .coaches__img {
+    left: calc(50% - 113px);
+  }
+
+  .coaches .coaches__info {
+    left: calc(50% - 113px);
+    padding: 52px 24px 42px 24px;
+    width: 226px;
+  }
+
+  .coaches .coaches__skills {
+    padding-left: 25px;
   }
 
   .coaches img {
-    width: 100%;
+    width: 226px;
     height: 274px;
+  }
+
+  .coaches .coaches__button {
+    width: 10px;
+    height: 19px;
+    top: 62.5%;
+  }
+
+  .coaches .coaches__button--previous {
+    left: 4%;
+  }
+
+  .coaches .coaches__button--next {
+    right: 4%;
   }
 
   .advantages h2 {
@@ -3747,6 +3814,7 @@ button,
 
   .advantages p {
     padding: 0;
+    width: 99%;
     text-align: center;
   }
 
@@ -3878,6 +3946,7 @@ button,
     align-items: center;
     width: 100%;
     margin-bottom: 30px;
+    padding-top: 32px;
   }
 
   .offers__box--special h3 {
@@ -3999,6 +4068,7 @@ button,
 
   .footer .footer__container {
     padding-top: 45px;
+    padding-bottom: 52px;
     padding-right: 15px;
   }
 
@@ -4009,7 +4079,7 @@ button,
 
   .footer .footer__nav {
     margin-top: -20px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding: 0;
   }
 

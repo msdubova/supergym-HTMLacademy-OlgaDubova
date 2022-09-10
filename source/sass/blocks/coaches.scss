@@ -5,16 +5,24 @@
       padding-bottom: 100px;
     }
 
+    .coaches__info {
+      left: calc(50% - 134px);
+
+      width: 268px;
+    }
     .coaches__img {
+      left: calc(50% - 134px);
     }
 
     img {
-      width: 100%;
-      height: auto;
+      width: 268px;
+      height: 294px;
     }
+
     h2 {
       margin-bottom: 42px;
     }
+
     .coaches__slider {
       width: 83.5%;
     }
@@ -22,17 +30,34 @@
     //   height: 294px;
     // }
     .coaches__item {
-      width: 268px;
+      &:hover {
+        &::after {
+          left: calc(50% - 134px);
+
+          width: 268px;
+        }
+      }
     }
     li {
-border: 1px solid red;
     }
   }
   @include vp-767 {
+    h4{
+      margin-right: 25px;
+    }
+    li {
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 13px;
+      letter-spacing: 0em;
 
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     .coaches__container {
       padding-top: 22px;
-      padding-bottom: 70px;
+      padding-bottom: 58px;
     }
 
     .coaches__slider {
@@ -40,21 +65,46 @@ border: 1px solid red;
     }
     .coaches__item {
       height: 274px;
-    }
 
+      &:hover {
+        &::after {
+          left: calc(50% - 113px);
+
+          width: 226px;
+        }
+      }
+    }
+    .coaches__img {
+      left: calc(50% - 113px);
+    }
     .coaches__info {
-      // padding-right: 30px;
-      // padding-left: 30px;
+      left: calc(50% - 113px);
+padding: 52px 24px 42px 24px;
+      width: 226px;
     }
-    li {
-      height: 274px;
-    }
+.coaches__skills {
+  padding-left: 25px;
+}
 
     img {
-      width: 100%;
+      width: 226px;
       height: 274px;
     }
+
+
+    .coaches__button {
+      width: 10px;
+      height: 19px;
+      top: 62.5%;
+      &--previous {
+        left: 4%;
+      }
+
+      &--next {
+        right: 4%;}
+    }
   }
+
   .coaches__container {
     padding-top: 70px;
     padding-bottom: 120px;
@@ -108,7 +158,6 @@ border: 1px solid red;
 
         background: $color-primary-black-opacity-089;
       }
-
 
       & .coaches__skills {
         display: flex;
@@ -169,5 +218,17 @@ border: 1px solid red;
     color: $color-lightgrey;
   }
 
-
+  li {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 90%;
+      background-color: $color-default-white;
+      left: -15px;
+      top: 8px;
+    }
+  }
 }
