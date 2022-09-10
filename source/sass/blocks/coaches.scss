@@ -4,38 +4,60 @@
       padding-top: 50px;
       padding-bottom: 100px;
     }
+
     .coaches__img {
-
-
     }
 
     img {
-
-width: 268px;
-height: 294px;
-
+      width: 100%;
+      height: auto;
     }
     h2 {
       margin-bottom: 42px;
     }
     .coaches__slider {
       width: 83.5%;
-
     }
     // .coaches__wrapper {
     //   height: 294px;
     // }
     .coaches__item {
-width: 268px;
-
+      width: 268px;
     }
     li {
-      background-color: darkblue;
+border: 1px solid red;
+    }
+  }
+  @include vp-767 {
+
+    .coaches__container {
+      padding-top: 22px;
+      padding-bottom: 70px;
+    }
+
+    .coaches__slider {
+      width: 78%;
+    }
+    .coaches__item {
+      height: 274px;
+    }
+
+    .coaches__info {
+      // padding-right: 30px;
+      // padding-left: 30px;
+    }
+    li {
+      height: 274px;
+    }
+
+    img {
+      width: 100%;
+      height: 274px;
     }
   }
   .coaches__container {
     padding-top: 70px;
-    padding-bottom: 115px;
+    padding-bottom: 120px;
   }
 
   h2 {
@@ -63,17 +85,15 @@ width: 268px;
     position: relative;;
   }
 
-  .coaches__wrapper {
-
-  }
 
   .coaches__item {
     position: relative;
-display: flex;
-align-items: flex-end;
+
+    display: flex;
+    align-items: flex-end;
     width: 260px;
-height: 294px;
-    // overflow: hidden;
+    height: 294px;
+    overflow: hidden;
 
     &:hover {
       &::after {
@@ -96,6 +116,7 @@ height: 294px;
     }
   }
 
+
   .coaches__img {
     position: absolute;
     top: 0;
@@ -108,11 +129,12 @@ height: 294px;
   .coaches__info {
     position: relative;
     z-index: 10;
-width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
     // overflow: scroll;
     height: 100%;
     padding: 30px 40px 22px 48px;
@@ -147,11 +169,5 @@ width: 100%;
     color: $color-lightgrey;
   }
 
-  li {
-    margin-bottom: 13px;
-    margin-left: 23px;
 
-    font-size: 14px;
-    line-height: 21px;
-  }
 }

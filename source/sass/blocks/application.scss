@@ -71,7 +71,27 @@
       }
     }
   }
+  @include vp-767 {
+     a{
+      margin-top: 32px;
+     }
+    h2 {
+      font-size: 52px;
+line-height: 52px;
+    }
+    .application__container {
+      flex-direction: column;
+      padding-top: 70px;
+    }
 
+    .application__block {
+      width: 100%;
+    }
+
+    .application__img {
+      width: 100%;
+    }
+  }
   h2 {
     max-width: 201px;
     margin: 0;

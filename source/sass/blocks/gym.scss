@@ -24,7 +24,6 @@
     .gym__container {
       flex-direction: column;
       padding-top: 50px;
-
     }
 
     .gym__info {
@@ -43,6 +42,43 @@
       left: calc(50% - 133px);
     }
   }
+  @include vp-767 {
+    min-height: auto;
+    h2 {
+ margin-top: 70px;
+ margin-bottom: 10px;
+    }
+    span {
+      margin-bottom: 30px;
+    }
+
+    p {
+      width: 90%;
+
+      text-align: left;
+    }
+
+    .gym__container {
+      padding: 0;
+    }
+    .gym__info {
+      align-items: flex-start;
+      padding: 0 15px;
+      margin-bottom: 23px;
+    }
+
+    .gym__img {
+      margin-bottom: 40px ;
+    }
+    .gym__video {
+      position: relative;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+    }
+  }
+
 
   h2 {
     margin-bottom: 10px;

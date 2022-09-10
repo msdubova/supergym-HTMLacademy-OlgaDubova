@@ -35,7 +35,9 @@ $color-lightgrey:                   #B6BDCC;
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
-$gradient-header:                  conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$gradient-header-desktop:                  conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$gradient-header-tablet:                   conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$gradient-header-mobile:                  conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
 
 $gradient-video-button:             linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
 $gradient-button:                   linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);

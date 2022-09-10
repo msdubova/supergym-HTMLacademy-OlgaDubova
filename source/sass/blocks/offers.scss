@@ -1,11 +1,10 @@
 .offers {
   margin-bottom: 98px;
 
-
   @include vp-1199 {
     .offers__container {
       padding-top: 52px;
-      padding-bottom: 0px;
+      padding-bottom: 0;
     }
 
     .offers__wrapper {
@@ -13,11 +12,14 @@
     }
 
     .offers__box {
+      flex-direction: row;
       width: 100%;
-flex-direction: row;
       &--special {
         margin-bottom: 30px;
       }
+    }
+    .offers__info {
+      padding-right: 30px;
     }
 
     .offers__img {
@@ -25,14 +27,54 @@ flex-direction: row;
     }
 
     .offers__block {
-width: 48%;
+      width: 48%;
     }
     h2 {
       margin-bottom: 40px;
     }
-
-
   };
+  @include vp-767 {
+    margin-bottom: 40px;
+    h2 {
+      margin-bottom: 42px;
+    }
+
+
+    p {
+      line-height: 23px;
+      text-align: center;
+    }
+
+    a {
+
+      margin-top: 25px;
+      align-self: center;
+    }
+    .offers__container {
+      padding-top: 22px;
+    }
+
+    .offers__wrapper {
+    }
+
+    .offers__info {
+      align-items: center;
+      padding-top: 50px;
+    }
+    .offers__box {
+      flex-direction: column;
+    }
+
+    .offers__img {
+      width: 100%;
+    }
+
+    .offers__block {
+      align-items: center;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
   h2 {
     margin-bottom: 52px;
   }
@@ -94,9 +136,9 @@ width: 48%;
     display: flex;
     flex-direction: column;
     min-height: 211px;
-
     padding: 29px;
-   padding-top: 22px;
+    padding-top: 35px;
+
     border: solid;
     border-width: 7px;
     border-image-source: $gradient-border;
@@ -115,6 +157,31 @@ width: 48%;
 
 
 .offers__box--special {
+  @include vp-767 {
+    h3 {
+      margin-right: 15px;
+
+      line-height: 100px;
+
+      &::before {
+        top: -25%;
+        left: calc(50% - 20px);
+      }
+    }
+    p {
+      margin-right: 12px;
+
+      line-height: 24px;
+      text-align: center;
+    }
+
+    a {
+      align-self: center;
+      margin-top: 32px;
+      // display: inline-block;
+      margin-right: 13px;
+    }
+  }
   h3 {
     position: relative;
 

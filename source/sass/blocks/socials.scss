@@ -1,5 +1,11 @@
 .socials {
 flex-shrink: 0;
+@include vp-767 {
+  li{
+    margin-left: 0;
+    margin-right: 11px;
+  }
+}
   ul {
     @include reset-ul;
     display: flex;

@@ -2,19 +2,19 @@
   background: $gradient-feedback;
   border-top: 1px solid $color-darkgrey;
 
-  @include vp-1199{
-
+  @include vp-1199 {
     background: none;
     border: none;
 
     h4 {
+      margin-bottom: 12px;
+
       font-size: 20px;
       line-height: 20px;
-      margin-bottom: 12px;
     }
 
     p {
-font-size: 18px;
+      font-size: 18px;
     }
     .feedback__container {
       flex-direction: column;
@@ -24,7 +24,6 @@ font-size: 18px;
 
     .feedback__wrapper {
       padding: 13px 0;
-
     }
     .feedback__block {
       width: 100%;
@@ -36,23 +35,52 @@ font-size: 18px;
     }
 
     .feedback__box {
-      min-height: 152px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      min-height: 152px;
       padding-left: 47px;
 
       &--border {
-        padding-left: 0;
         width: 56.6%;
+        padding-left: 0;
       }
 
       &::after {
         top: 13%;
+
         height: 86%;
       }
     }
   }
+
+  @include vp-767 {
+    .feedback__container {
+      padding-bottom: 19px;
+    }
+    .feedback__block {
+      padding: 22px 15px;
+    }
+
+    .feedback__wrapper {
+      flex-direction: column;
+    }
+
+    .feedback__box {
+      padding: 0;
+      &--border {
+        width: 100%;
+        &::after {
+          display: none;
+        }
+      }
+    }
+    p {
+      width: 100%;
+      margin-bottom: 13px;
+    }
+  }
+
   h2 {
     margin-bottom: 10px;
   }
@@ -71,7 +99,6 @@ font-size: 18px;
 
   .feedback__container {
     display: flex;
-
   }
 
   .feedback__block {
