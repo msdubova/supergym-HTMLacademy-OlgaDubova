@@ -104,7 +104,7 @@ function setupVideo() {
     video.appendChild(iframe);
   });
 
-  link.removeAttribute('href');
+  // link.removeAttribute('href');
   video.classList.add('video--enabled');
 }
 
@@ -258,9 +258,25 @@ if (window.localStorage) {
   }
 }
 
+// Функция скрывает элементы, которые должны быть отрыты с применением JS
+function setJavaScript() {
+  const coaches = document.querySelectorAll('.coaches__item');
+  for (let i = 0; i < coaches.length; i++) {
+    coaches[i].classList.remove('coaches__item--hover');
+  }
+
+  const buttons = document.querySelectorAll('.slider__button');
+
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove('visually-hidden');
+  }
+
+  const video = document.querySelector('.video__link--nojs');
+  video.remove();
+}
+
+setJavaScript();
 setupVideo();
 setTab();
 setHover();
 maskPhone();
-
-

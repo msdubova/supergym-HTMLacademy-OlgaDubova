@@ -141,7 +141,7 @@
         <div class="gym__video video">
           <div class="video__container">
             <div class="video__cover">
-              <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+              <div class="video__link video__link--js">
                 <picture>
                   <!-- 1x: 320x167; 2x: 640x334 -->
                   <source type="image/webp" media="(max-width: 767px)"
@@ -160,13 +160,19 @@
                   <!-- 1x: 364x228; 2x: 728x456 -->
                   <img width="364" height="228" srcset="img/img-video-desktop-2x.png 2x"
                     src="img/img-video-desktop-1x.png" alt="Обложка видеоролика SuperGym">
-                </picture> <button class="video__button" data-video-button type="button"
+                </picture>
+                <button class="video__button" data-video-button type="button"
                   aria-label="Воспроизвести презентационный видео-ролик SuperGym" tabindex="100">
                   <svg width="17" height="17">
                     <use xlink:href="img/sprite_auto.svg#icon-play"></use>
                   </svg>
                 </button>
+              </div>
+              <a class="video__link video__link--nojs" href="https://www.youtube.com/watch?v=9TZXsZItgdw"
+                aria-label="Посмотреть видео о фитнес клубе">
+
               </a>
+
 
             </div>
 
@@ -302,7 +308,7 @@
               </a>
             </li>
             <li>
-               <h3>
+              <h3>
                 6&nbsp;месяцев
               </h3>
               <h4>
@@ -364,7 +370,7 @@
               </a>
             </li>
             <li>
-               <h3>
+              <h3>
                 6&nbsp;месяцев
               </h3>
               <h4>
@@ -488,7 +494,7 @@
           <div class="coaches__slider swiper">
             <!-- Additional required wrapper -->
             <ul class="coaches__wrapper slider__wrapper swiper-wrapper">
-              <li   data-tab="li__1" class="coaches__item coaches__item--hover swiper-slide">
+              <li data-tab="li__1" class="coaches__item coaches__item--hover swiper-slide">
                 <div class="coaches__img">
                   <picture>
                     <!-- 1x: 226x274; 2x: 452x548 -->
@@ -535,7 +541,7 @@
                   </div>
                 </div>
               </li>
-              <li  data-tab="li__2" class="coaches__item coaches__item--hover swiper-slide">
+              <li data-tab="li__2" class="coaches__item coaches__item--hover swiper-slide">
                 <div class="coaches__img">
                   <picture>
                     <!-- 1x: 226x274; 2x: 452x548 -->
@@ -581,7 +587,7 @@
                   </div>
                 </div>
               </li>
-              <li   data-tab="li__3" class="coaches__item coaches__item--hover swiper-slide">
+              <li data-tab="li__3" class="coaches__item coaches__item--hover swiper-slide">
                 <div class="coaches__img">
                   <picture>
                     <!-- 1x: 226x274; 2x: 452x548 -->
@@ -626,7 +632,7 @@
                   </div>
                 </div>
               </li>
-              <li  data-tab="li__4"  class="coaches__item coaches__item--hover swiper-slide">
+              <li data-tab="li__4" class="coaches__item coaches__item--hover swiper-slide">
                 <div class="coaches__img">
                   <picture>
                     <!-- 1x: 226x274; 2x: 452x548 -->
@@ -672,7 +678,7 @@
                   </div>
                 </div>
               </li>
-              <li    data-tab="li__5" class="coaches__item coaches__item--hover swiper-slide">
+              <li data-tab="li__5" class="coaches__item coaches__item--hover swiper-slide">
                 <div class="coaches__img">
                   <picture>
                     <!-- 1x: 226x274; 2x: 452x548 -->
@@ -718,7 +724,7 @@
                   </div>
                 </div>
               </li>
-              <li    data-tab="li__6" class="coaches__item coaches__item--hover swiper-slide">
+              <li data-tab="li__6" class="coaches__item coaches__item--hover swiper-slide">
                 <div class="coaches__img">
                   <picture>
                     <!-- 1x: 226x274; 2x: 452x548 -->
@@ -764,7 +770,7 @@
                   </div>
                 </div>
               </li>
-              <li    data-tab="li__7" class="coaches__item coaches__item--hover swiper-slide">
+              <li data-tab="li__7" class="coaches__item coaches__item--hover swiper-slide">
                 <div class="coaches__img">
                   <picture>
                     <!-- 1x: 226x274; 2x: 452x548 -->
@@ -810,7 +816,7 @@
                   </div>
                 </div>
               </li>
-              <li    data-tab="li__1" class="coaches__item coaches__item--hover swiper-slide">
+              <li data-tab="li__1" class="coaches__item coaches__item--hover swiper-slide">
                 <div class="coaches__img">
                   <picture>
                     <!-- 1x: 226x274; 2x: 452x548 -->
@@ -861,9 +867,10 @@
           </div>
 
           <button
-            class="slider__button slider__button--previous coaches__button coaches__button--previous  swiper-button-prev">
+            class="slider__button visually-hidden slider__button--previous coaches__button coaches__button--previous  swiper-button-prev">
           </button>
-          <button class="slider__button slider__button--next coaches__button coaches__button--next swiper-button-next">
+          <button
+            class="slider__button visually-hidden slider__button--next coaches__button coaches__button--next swiper-button-next">
           </button>
         </div>
 
@@ -1056,7 +1063,7 @@
         <h2>Отзывы</h2>
         <div class="slider">
           <div class="reviews__wrapper swiper">
-            <ul class="swiper-wrapper">
+            <ul class="reviews__ul swiper-wrapper">
               <li class="swiper-slide">
                 <div class="reviews__img">
                   <picture>
@@ -1074,7 +1081,7 @@
                   </h3>
                   <p>
                     &laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
-                    обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo
+                    обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
                   </p>
                 </div>
               </li>
@@ -1096,20 +1103,21 @@
                   <p>
                     &laquo;Очень рекомендую к&nbsp;посещению групповые занятия в&nbsp;SuperGym к&nbsp;тренеру Марии
                     Кетовой.
-                    Занятия проходят в&nbsp;полутанцевальном формате и&nbsp;никогда не&nbsp;бывают скучными&raquo
+                    Занятия проходят в&nbsp;полутанцевальном формате и&nbsp;никогда не&nbsp;бывают скучными&raquo;
                   </p>
                 </div>
               </li>
             </ul>
           </div>
           <button
-            class="reviews__button reviews__button--previous slider__button slider__button--previous swiper-button-prev"
+            class="reviews__button reviews__button--previous slider__button visually-hidden slider__button--previous swiper-button-prev"
             type="button" aria-label="Предыдущий отзыв">
             <svg width="18" height="34" role="img" fill="none">
               <use xlink:href="img/sprite_auto.svg#vector"></use>
             </svg>
           </button>
-          <button class="reviews__button reviews__button--next slider__button slider__button--next swiper-button-next"
+          <button
+            class="reviews__button reviews__button--next slider__button visually-hidden slider__button--next swiper-button-next"
             type="button" aria-label="Следующий отзыв">
             <svg width="18" height="34" role="img">
               <use xlink:href="img/sprite_auto.svg#vector" fill="none"></use>
