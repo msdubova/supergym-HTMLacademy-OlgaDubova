@@ -1348,6 +1348,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
   letter-spacing: 0;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -1869,6 +1870,7 @@ button,
 }
 
 .subscription {
+  position: relative;
   background-color: #F8F9FC;
 }
 
@@ -1957,7 +1959,6 @@ button,
 }
 
 .subscription .subscription__container {
-  position: relative;
   padding-top: 70px;
   padding-bottom: 90px;
 }
@@ -2007,7 +2008,7 @@ button,
 .subscription .subscription__img {
   position: absolute;
   top: 59.5%;
-  right: -13.4%;
+  right: 0;
   z-index: 0;
 }
 
@@ -2197,7 +2198,14 @@ button,
 
 .coaches .coaches__container {
   padding-top: 70px;
-  padding-bottom: 120px;
+  padding-bottom: 107px;
+}
+
+.coaches img {
+  width: 260px;
+  height: 294px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .coaches h2 {
@@ -2220,38 +2228,19 @@ button,
   list-style: none;
 }
 
+.coaches li {
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0;
+}
+
+.coaches li:last-child {
+  margin-bottom: 0;
+}
+
 .coaches .coaches__slider {
   position: relative;
-}
-
-.coaches .coaches__item {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  width: 260px;
-  height: 294px;
-  overflow: hidden;
-}
-
-.coaches .coaches__item:hover::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-  background: rgba(16, 38, 84, 0.89);
-}
-
-.coaches .coaches__item:hover .coaches__skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .coaches .coaches__img {
@@ -2290,18 +2279,48 @@ button,
   top: 253px;
 }
 
-.coaches .coaches__skills {
+.coaches__item {
+  -ms-touch-action: auto;
+  touch-action: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: 260px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.coaches__item--hover::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 38, 84, 0.89);
+}
+
+.coaches__item--hover .coaches__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coaches__skills {
   display: none;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-}
-
-.coaches__skills {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-left: 22px;
 }
 
 .coaches__skills h4 {
@@ -2309,7 +2328,7 @@ button,
   -ms-grid-row-align: center;
   align-self: center;
   margin-top: 0;
-  margin-right: 7px;
+  margin-right: 28px;
   margin-bottom: 35px;
   font-style: normal;
   font-weight: 400;
@@ -2324,14 +2343,14 @@ button,
 }
 
 .coaches__skills li::before {
-  position: absolute;
   content: "";
+  position: absolute;
+  top: 8px;
+  left: -15px;
   width: 6px;
   height: 6px;
-  border-radius: 90%;
   background-color: #ffffff;
-  left: -15px;
-  top: 8px;
+  border-radius: 90%;
 }
 
 .advantages {
@@ -3067,6 +3086,10 @@ button,
     left: calc(50% - 133px);
   }
 
+  .subscription {
+    height: auto;
+  }
+
   .subscription h2 {
     margin-bottom: 15px;
   }
@@ -3090,7 +3113,7 @@ button,
 
   .subscription .subscription__img {
     top: 82.1%;
-    right: -10%;
+    right: 0;
   }
 
   .subscription ul {
@@ -3191,7 +3214,7 @@ button,
 
   .coaches .coaches__container {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 86px;
   }
 
   .coaches .coaches__info {
@@ -3212,17 +3235,32 @@ button,
     margin-bottom: 42px;
   }
 
+  .coaches h3 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .coaches h4 {
+    margin-right: 35px;
+  }
+
   .coaches .coaches__slider {
     width: 83.5%;
   }
 
-  .coaches .coaches__item:hover::after {
+  .coaches__item .coaches__img {
+    pointer-events: auto;
+  }
+
+  .coaches__item--hover::after {
     left: calc(50% - 134px);
     width: 268px;
   }
 
   .advantages h2 {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   .advantages h3 {
@@ -3335,7 +3373,7 @@ button,
   }
 
   .offers h2 {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   .reviews {
@@ -3680,8 +3718,8 @@ button,
 
   .subscription li {
     width: 100%;
-    padding: 46px 34px 37px;
     margin-bottom: 35px;
+    padding: 46px 34px 37px;
   }
 
   .subscription .subscription__img {
@@ -3740,10 +3778,10 @@ button,
   }
 
   .coaches li {
+    margin-bottom: 13px;
     font-size: 14px;
     line-height: 21px;
-    margin-bottom: 13px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
   }
 
   .coaches li:last-child {
@@ -3759,27 +3797,14 @@ button,
     width: 78%;
   }
 
-  .coaches .coaches__item {
-    height: 274px;
-  }
-
-  .coaches .coaches__item:hover::after {
-    left: calc(50% - 113px);
-    width: 226px;
-  }
-
   .coaches .coaches__img {
     left: calc(50% - 113px);
   }
 
   .coaches .coaches__info {
     left: calc(50% - 113px);
-    padding: 52px 24px 42px 24px;
     width: 226px;
-  }
-
-  .coaches .coaches__skills {
-    padding-left: 25px;
+    padding: 52px 24px 42px 24px;
   }
 
   .coaches img {
@@ -3788,9 +3813,9 @@ button,
   }
 
   .coaches .coaches__button {
+    top: 62.5%;
     width: 10px;
     height: 19px;
-    top: 62.5%;
   }
 
   .coaches .coaches__button--previous {
@@ -3799,6 +3824,19 @@ button,
 
   .coaches .coaches__button--next {
     right: 4%;
+  }
+
+  .coaches__item {
+    height: 274px;
+  }
+
+  .coaches__item--hover::after {
+    left: calc(50% - 113px);
+    width: 226px;
+  }
+
+  .coaches__skills {
+    padding-left: 25px;
   }
 
   .advantages h2 {
@@ -3871,26 +3909,6 @@ button,
 
   .advantages__block--special span:last-child {
     line-height: 20px;
-  }
-
-  .advantages__block--special::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -15px;
-    width: 15px;
-    height: 100%;
-    background-color: #102654;
-  }
-
-  .advantages__block--special::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -15px;
-    width: 15px;
-    height: 100%;
-    background-color: #102654;
   }
 
   .advantages__block--special p {

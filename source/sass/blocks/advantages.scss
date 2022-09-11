@@ -3,7 +3,7 @@
 
   @include vp-1199 {
     h2 {
-      margin-bottom: 40px;
+      margin-bottom: 42px;
     }
 
     h3 {
@@ -212,29 +212,29 @@ margin-bottom: 40px;
     & span:last-child {
       line-height: 20px;
     }
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -15px;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: -15px;
 
-      width: 15px;
-      height: 100%;
+    //   width: 15px;
+    //   height: 100%;
 
-      background-color: $color-primary-black;
-    }
+    //   background-color: $color-primary-black;
+    // }
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -15px;
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   right: -15px;
 
-      width: 15px;
-      height: 100%;
+    //   width: 15px;
+    //   height: 100%;
 
-      background-color: $color-primary-black;
-    }
+    //   background-color: $color-primary-black;
+    // }
     p {
       width: 100%;
       padding: 0 25px;

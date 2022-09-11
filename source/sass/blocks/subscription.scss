@@ -1,8 +1,13 @@
 .subscription {
+  position: relative;
   background-color: $color-secondary-grey;
 
   @include vp-1199 {
+    height: auto;
+    // overflow-x: hidden;
 
+    // -ms-overflow-style: none;
+    // scrollbar-width: none;
     h2 {
       margin-bottom: 15px;
     }
@@ -27,7 +32,7 @@
 
     .subscription__img {
       top: 82.1%;
-      right: -10%;
+      right: 0;
     }
     ul {
       flex-direction: column;
@@ -74,8 +79,8 @@
     }
     li {
       width: 100%;
+      margin-bottom: 35px;
       padding: 46px 34px 37px;
-      margin-bottom:  35px;
     }
 
     .subscription__img {
@@ -175,7 +180,7 @@
   }
 
   .subscription__container {
-    position: relative;
+
 
     padding-top: 70px;
     padding-bottom: 90px;
@@ -225,7 +230,7 @@
   .subscription__img {
     position: absolute;
     top: 59.5%;
-    right: -13.4%;
+    right: 0;
     z-index: 0;
   }
 

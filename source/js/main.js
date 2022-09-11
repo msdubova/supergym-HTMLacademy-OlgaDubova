@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // используйте .closest(el)
 
-
+// Функция делает активным таб в разделе Абонементы
 function setTab() {
   const subscription = document.querySelector('.subscription');
   const titles = subscription.querySelectorAll('h3');
@@ -90,8 +90,7 @@ function setTab() {
 
 }
 
-setTab();
-
+// Функция подключает видео к странице по нажатию кнопки видеоблока
 function setupVideo() {
   let video = document.querySelector('.video__container');
   let link = video.querySelector('.video__link');
@@ -109,7 +108,7 @@ function setupVideo() {
   video.classList.add('video--enabled');
 }
 
-
+// Функция создает iframe для подключения к странице в качестве видео
 function createIframe() {
   let iframe = document.createElement('iframe');
 
@@ -121,4 +120,147 @@ function createIframe() {
   return iframe;
 }
 
+// Функция иммитирует ховер при клике на карточку тренера в режиме планшет и смартфон
+function setHoverClick(item) {
+  if (window.innerWidth < 1200) {
+    if (item.classList.contains('coaches__item--hover')) {
+      item.classList.remove('coaches__item--hover');
+    } else {
+      item.classList.add('coaches__item--hover');
+    }
+
+  }
+}
+
+// Функция иммитирует ховер при попадании мышки на карточку тренера в режиме десктоп
+function setHoverMouseEnter(item) {
+  if (window.innerWidth >= 1200) {
+    const items = document.querySelectorAll('.coaches__item');
+
+    for (let y = 0; y < items.length; y++) {
+
+        items[y].classList.remove('coaches__item--hover');
+
+    }
+    if (item.classList.contains('coaches__item--hover')) {
+      item.classList.remove('coaches__item--hover');
+    }
+    item.classList.add('coaches__item--hover');
+  }
+}
+
+// Функция иммитирует закрытие ховера когда курсор покидает область  карточки тренера в режиме десктоп
+function setHoverMouseLeave(item) {
+  if (window.innerWidth >= 1200) {
+    // if (item.classList.contains('coaches__item--hover')) {
+    //   item.classList.remove('coaches__item--hover');
+    // }
+    item.classList.remove('coaches__item--hover');
+  }
+}
+
+// Функция отслеживает изменения ширины вьюпорта чтоб включить актулаьные Функции иммитации ховера
+function checkViewport() {
+  window.addEventListener('resize', function () {
+    const items = document.querySelectorAll('.coaches__item');
+
+    for (let y = 0; y < items.length; y++) {
+      items[y].classList.remove('coaches__item--hover');
+    }
+  });
+}
+
+// Функция запускает другие функции которые иммитируют ховер
+function setHover() {
+  const items = document.querySelectorAll('.coaches__item');
+
+  for (let i = 0; i < items.length; i++) {
+    items[i].addEventListener('click', function () {
+      let currentCard = items[i];
+      let currentId = currentCard.getAttribute('data-tab');
+
+      for (let y = 0; y < items.length; y++) {
+        if (items[y].getAttribute('data-tab') !== currentId) {
+          items[y].classList.remove('coaches__item--hover');
+        }
+      }
+      setHoverClick(items[i]);
+    });
+  }
+
+  for (let i = 0; i < items.length; i++) {
+    items[i].addEventListener('mouseenter', function () {
+      setHoverMouseEnter(items[i]);
+    });
+  }
+
+  for (let i = 0; i < items.length; i++) {
+    items[i].addEventListener('mouseleave', function () {
+      setHoverMouseLeave(items[i]);
+    });
+  }
+
+  checkViewport();
+}
+
+// Функция задает маску ввода номера телефона в форме
+function maskPhone() {
+  const elems = document.querySelectorAll('input[type="tel"]');
+
+  function mask(event) {
+    const keyCode = event.keyCode;
+    const template = '+7 (___) ___-__-__';
+    const def = template.replace(/\D/g, '');
+    const val = event.target.value.replace(/\D/g, '');
+
+    let i = 0;
+    let newValue = template.replace(/[_\d]/g, function (a) {
+      return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+    });
+    i = newValue.indexOf('_');
+    if (i !== -1) {
+      newValue = newValue.slice(0, i);
+    }
+    let reg = template.substr(0, event.target.value.length).replace(/_+/g,
+        function (a) {
+          return '\\d{1,' + a.length + '}';
+        }).replace(/[+()]/g, '\\$&');
+    reg = new RegExp('^' + reg + '$');
+    if (!reg.test(event.target.value) || event.target.value.length < 5 || keyCode > 47 && keyCode < 58) {
+      event.target.value = newValue;
+    }
+    if (event.type === 'blur' && event.target.value.length < 5) {
+      event.target.value = ' ';
+    }
+  }
+
+  for (const elem of elems) {
+    elem.addEventListener('input', mask);
+    elem.addEventListener('focus', mask);
+    elem.addEventListener('blur', mask);
+  }
+}
+
+// localStorage
+if (window.localStorage) {
+  let elements = document.querySelectorAll('[name]');
+
+  for (let i = 0, length = elements.length; i < length; i++) {
+    (function (element) {
+      let name = element.getAttribute('name');
+
+      element.value = localStorage.getItem(name) || '';
+
+      element.onkeyup = function () {
+        localStorage.setItem(name, element.value);
+      };
+    })(elements[i]);
+  }
+}
+
 setupVideo();
+setTab();
+setHover();
+maskPhone();
+
+
