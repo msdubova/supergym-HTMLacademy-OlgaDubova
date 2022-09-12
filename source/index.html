@@ -21,7 +21,10 @@
   <header class="header">
     <div class="header__container container">
       <div class="header__top">
-        <a class="header__logo" aria-label="Логотип Фитнес-Центра SuperGym">
+        <a class="header__logo">
+          <span class="visually-hidden">
+            Логотип Фитнес-Центра SuperGym
+          </span>
           <svg width="89" height="20" role="img">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
           </svg>
@@ -61,8 +64,8 @@
               srcset="img/img-header-tablet-2x.png 2x, img/img-header-tablet-1x.png 1x">
 
             <!-- 1x: 500x556; 2x: 1000x1112 -->
-            <img width="500" height="556" srcset="img/img-header-desktop-2x.png 2x" src="img/img-header-desktop-1x.png"
-              alt="Изображение Фитнес-клуба SuperGym" loading="lazy">
+            <img loading="lazy" width="500" height="556" srcset="img/img-header-desktop-2x.png 2x"
+              src="img/img-header-desktop-1x.png" alt="Изображение Фитнес-клуба SuperGym">
           </picture>
           <ul class=" header__socials">
             <li>
@@ -127,8 +130,8 @@
             <!-- 1x: 678x345; 2x: 1356x690 -->
             <source media="(max-width: 1199px)" srcset="img-gym-tablet-2x.png 2x, img-gym-tablet-1x.png 1x">
             <!-- 1x: 660x401; 2x: 1320x802 -->
-            <img width="660" height="400" srcset="img/img-gym-desktop-2x.png 2x" src="img/img-gym-desktop-1x.png"
-              alt="Изображение Фитнес-клуба SuperGym">
+            <img loading="lazy" width="660" height="400" srcset="img/img-gym-desktop-2x.png 2x"
+              src="img/img-gym-desktop-1x.png" alt="Изображение Фитнес-клуба SuperGym">
           </picture>
         </div>
         <div class="gym__video video">
@@ -151,17 +154,17 @@
                   <source media="(max-width: 1199px)"
                     srcset="img/img-video-tablet-2x.png 2x, img/img-video-tablet-1x.png 1x">
                   <!-- 1x: 364x228; 2x: 728x456 -->
-                  <img width="364" height="228" srcset="img/img-video-desktop-2x.png 2x"
+                  <img loading="lazy" width="364" height="228" srcset="img/img-video-desktop-2x.png 2x"
                     src="img/img-video-desktop-1x.png" alt="Обложка видеоролика SuperGym">
                 </picture>
                 <button class="video__button" data-video-button type="button"
-                  aria-label="Воспроизвести презентационный видео-ролик SuperGym" tabindex="100">
+                  aria-label="Воспроизвести презентационный видео-ролик SuperGym">
                   <svg width="17" height="17">
                     <use xlink:href="img/sprite_auto.svg#icon-play"></use>
                   </svg>
                 </button>
               </div>
-              <a class="video__link video__link--nojs" href="https://www.youtube.com/watch?v=9TZXsZItgdw"
+              <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" class="video__link video__link--nojs"
                 aria-label="Посмотреть видео о фитнес клубе">
               </a>
             </div>
@@ -180,8 +183,8 @@
           <!-- 1x: 289x345; 2x: 578x690 -->
           <source media="(max-width: 1199px)" srcset="img/img-slider-tablet-2x.png 2x, img/img-slider-tablet-1x.png 1x">
           <!-- 1x: 321x384; 2x: 642x768 -->
-          <img srcset="img/img-slider-desktop-2x.png 2x" src="img/img-slider-desktop-1x.png"
-            alt="Обложка видеоролика SuperGym">
+          <img loading="lazy" width="321" height="384" srcset="img/img-slider-desktop-2x.png 2x"
+            src="img/img-slider-desktop-1x.png" alt="Декоративное изображение - инвентарь">
         </picture>
       </div>
       <div class="subscription__container container">
@@ -208,7 +211,7 @@
               </b>
               <p>
                 5000
-                <svg width="30" height="42">
+                <svg width="30" height="42" aria-label="Символ рубля">
                   <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
                 </svg>
               </p>
@@ -227,7 +230,8 @@
                 с 8:00 до 17:00
               </span><b>1700</b>
               <p>
-                1700<svg width="30" height="42">
+                1700
+                <svg width="30" height="42" aria-label="Символ рубля">
                   <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
                 </svg>
               </p>
@@ -246,7 +250,8 @@
                 с 8:00 до 22:00
               </span> <b>2700</b>
               <p>
-                2700<svg width="30" height="42">
+                2700
+                <svg width="30" height="42" aria-label="Символ рубля">
                   <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
                 </svg>
               </p>
@@ -267,7 +272,8 @@
                 12&nbsp;занятий
               </span><b>7000</b>
               <p>
-                7000<svg width="30" height="42">
+                7000
+                <svg width="30" height="42" aria-label="Символ рубля">
                   <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
                 </svg>
               </p>
@@ -286,7 +292,8 @@
                 с&nbsp;8:00 до&nbsp;17:00
               </span> <b>4500</b>
               <p>
-                4500<svg width="30" height="42">
+                4500
+                <svg width="30" height="42" aria-label="Символ рубля">
                   <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
                 </svg>
               </p>
@@ -305,7 +312,8 @@
                 с&nbsp;8:00 до&nbsp;22:00
               </span> <b>4800</b>
               <p>
-                4800<svg width="30" height="42">
+                4800
+                <svg width="30" height="42" aria-label="Символ рубля">
                   <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
                 </svg>
               </p>
@@ -326,7 +334,8 @@
                 12&nbsp;занятий
               </span> <b>9000</b>
               <p>
-                9000<svg width="30" height="42">
+                9000
+                <svg width="30" height="42" aria-label="Символ рубля">
                   <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
                 </svg>
               </p>
@@ -345,7 +354,8 @@
                 с&nbsp;8:00 до&nbsp;17:00
               </span><b>5000</b>
               <p>
-                5000<svg width="30" height="42">
+                5000
+                <svg width="30" height="42" aria-label="Символ рубля">
                   <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
                 </svg>
               </p>
@@ -364,7 +374,8 @@
                 с 8:00 до 22:00
               </span><b>7000</b>
               <p>
-                7000<svg width="30" height="42">
+                7000
+                <svg width="30" height="42" aria-label="Символ рубля">
                   <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
                 </svg>
               </p>
@@ -436,8 +447,8 @@
             <source media="(max-width: 1199px)"
               srcset="img/img-application-tablet-2x.png 2x, img/img-application-tablet-1x.png 1x">
             <!-- 1x: 660x500; 2x: 1320x1000 -->
-            <img width="660" height="500" srcset="img/img-application-desktop-2x.png 2x"
-              src="img/img-application-desktop-1x.png" alt="Обложка видеоролика SuperGym">
+            <img loading="lazy" width="660" height="500" srcset="img/img-application-desktop-2x.png 2x"
+              src="img/img-application-desktop-1x.png" alt="Победитель соревнований 2021 Илья Садчиков">
           </picture>
         </div>
       </div>
@@ -455,7 +466,7 @@
                     <source type="image/webp"
                       srcset="img/img-coaches-pavlova-desktop-2x.webp 2x, img/img-coaches-pavlova-desktop-1x.webp 1x">
                     <!-- 1x: 260x294; 2x: 520x588 -->
-                    <img width="260" height="294" srcset="img/img-coaches-pavlova-desktop-2x.png 2x"
+                    <img loading="lazy" width="260" height="294" srcset="img/img-coaches-pavlova-desktop-2x.png 2x"
                       src="img/img-coaches-pavlova-desktop-1x.png" alt="Анна Павлова">
                   </picture>
                 </div>
@@ -488,8 +499,8 @@
                     <source type="image/webp"
                       srcset="img/img-coaches-lavrov-desktop-2x.webp 2x, img/img-coaches-lavrov-desktop-1x.webp 1x">
                     <!-- 1x: 260x294; 2x: 520x588 -->
-                    <img width="260" height="294" srcset="img/img-coaches-lavrov-desktop-2x.png 2x"
-                      src="img/img-coaches-lavrov-desktop-1x.png" alt="Анна Павлова">
+                    <img loading="lazy" width="260" height="294" srcset="img/img-coaches-lavrov-desktop-2x.png 2x"
+                      src="img/img-coaches-lavrov-desktop-1x.png" alt="Тренер Лавров">
                   </picture>
                 </div>
                 <div class="coaches__info">
@@ -521,8 +532,8 @@
                     <source type="image/webp"
                       srcset="img/img-coaches-pashkov-desktop-2x.webp 2x, img/img-coaches-pashkov-desktop-1x.webp 1x">
                     <!-- 1x: 260x294; 2x: 520x588 -->
-                    <img width="260" height="294" srcset="img/img-coaches-pashkov-desktop-2x.png 2x"
-                      src="img/img-coaches-pashkov-desktop-1x.png" alt="Анна Павлова">
+                    <img loading="lazy" width="260" height="294" srcset="img/img-coaches-pashkov-desktop-2x.png 2x"
+                      src="img/img-coaches-pashkov-desktop-1x.png" alt="Тренер Пашков">
                   </picture>
                 </div>
                 <div class="coaches__info">
@@ -554,8 +565,8 @@
                     <source type="image/webp"
                       srcset="img/img-coaches-ketova-desktop-2x.webp 2x, img/img-coaches-ketova-desktop-1x.webp 1x">
                     <!-- 1x: 260x294; 2x: 520x588 -->
-                    <img width="260" height="294" srcset="img/img-coaches-ketova-desktop-2x.png 2x"
-                      src="img/img-coaches-ketova-desktop-1x.png" alt="Анна Павлова">
+                    <img loading="lazy" width="260" height="294" srcset="img/img-coaches-ketova-desktop-2x.png 2x"
+                      src="img/img-coaches-ketova-desktop-1x.png" alt="Тренер Кетова">
                   </picture>
                 </div>
                 <div class="coaches__info">
@@ -587,8 +598,8 @@
                     <source type="image/webp"
                       srcset="img/img-coaches-pavlova-desktop-2x.webp 2x, img/img-coaches-pavlova-desktop-1x.webp 1x">
                     <!-- 1x: 260x294; 2x: 520x588 -->
-                    <img width="260" height="294" srcset="img/img-coaches-pavlova-desktop-2x.png 2x"
-                      src="img/img-coaches-pavlova-desktop-1x.png" alt="Анна Павлова">
+                    <img loading="lazy" width="260" height="294" srcset="img/img-coaches-pavlova-desktop-2x.png 2x"
+                      src="img/img-coaches-pavlova-desktop-1x.png" alt="Тренер Катина">
                   </picture>
                 </div>
                 <div class="coaches__info">
@@ -620,8 +631,8 @@
                     <source type="image/webp"
                       srcset="img/img-coaches-pavlova-desktop-2x.webp 2x, img/img-coaches-pavlova-desktop-1x.webp 1x">
                     <!-- 1x: 260x294; 2x: 520x588 -->
-                    <img width="260" height="294" srcset="img/img-coaches-pavlova-desktop-2x.png 2x"
-                      src="img/img-coaches-pavlova-desktop-1x.png" alt="Анна Павлова">
+                    <img loading="lazy" width="260" height="294" srcset="img/img-coaches-pavlova-desktop-2x.png 2x"
+                      src="img/img-coaches-pavlova-desktop-1x.png" alt="Тренер Морозов">
                   </picture>
                 </div>
                 <div class="coaches__info">
@@ -653,8 +664,8 @@
                     <source type="image/webp"
                       srcset="img/img-coaches-pavlova-desktop-2x.webp 2x, img/img-coaches-pavlova-desktop-1x.webp 1x">
                     <!-- 1x: 260x294; 2x: 520x588 -->
-                    <img width="260" height="294" srcset="img/img-coaches-pavlova-desktop-2x.png 2x"
-                      src="img/img-coaches-pavlova-desktop-1x.png" alt="Анна Павлова">
+                    <img loading="lazy" width="260" height="294" srcset="img/img-coaches-pavlova-desktop-2x.png 2x"
+                      src="img/img-coaches-pavlova-desktop-1x.png" alt="Тренер Соловьев">
                   </picture>
                 </div>
                 <div class="coaches__info">
@@ -686,8 +697,8 @@
                     <source type="image/webp"
                       srcset="img/img-coaches-pavlova-desktop-2x.webp 2x, img/img-coaches-pavlova-desktop-1x.webp 1x">
                     <!-- 1x: 260x294; 2x: 520x588 -->
-                    <img width="260" height="294" srcset="img/img-coaches-pavlova-desktop-2x.png 2x"
-                      src="img/img-coaches-pavlova-desktop-1x.png" alt="Анна Павлова">
+                    <img loading="lazy" width="260" height="294" srcset="img/img-coaches-pavlova-desktop-2x.png 2x"
+                      src="img/img-coaches-pavlova-desktop-1x.png" alt="Тренер Пронина">
                   </picture>
                 </div>
                 <div class="coaches__info">
@@ -714,10 +725,10 @@
               </li>
             </ul>
           </div>
-          <button
+          <button type="button" aria-label="Перелистнуть слайдер назад"
             class="slider__button visually-hidden slider__button--previous coaches__button coaches__button--previous  swiper-button-prev">
           </button>
-          <button
+          <button type="button" aria-label="Перелистнуть слайдер вперед"
             class="slider__button visually-hidden slider__button--next coaches__button coaches__button--next swiper-button-next">
           </button>
         </div>
@@ -858,8 +869,8 @@
                 <source media="(max-width: 1199px)"
                   srcset="img/img-offers-tablet-2x.png 2x, img/img-offers-tablet-1x.png 1x">
                 <!-- 1x: 280x462; 2x: 560x924 -->
-                <img width="280" height="462" srcset="img/img-offers-desktop-2x.png 2x"
-                  src="img/img-offers-desktop-1x.png" alt="Обложка видеоролика SuperGym">
+                <img loading="lazy" width="280" height="462" srcset="img/img-offers-desktop-2x.png 2x"
+                  src="img/img-offers-desktop-1x.png" alt="Член клуба Инна Воронова">
               </picture>
             </div>
           </div>
@@ -903,7 +914,7 @@
                     <source type="image/webp"
                       srcset="img/img-reviews-desktop-2x.webp 2x, img/img-reviews-desktop-1x.webp 1x">
                     <!-- 1x: 80x80; 2x: 160x160 -->
-                    <img width="80" height="80" srcset="img/img-reviews-desktop-2x.png 2x"
+                    <img loading="lazy" width="80" height="80" srcset="img/img-reviews-desktop-2x.png 2x"
                       src="img/img-reviews-desktop-1x.png" alt="Анна Орлова">
                   </picture>
                 </div>
@@ -924,7 +935,7 @@
                     <source type="image/webp"
                       srcset="img/img-reviews-desktop-2x.webp 2x, img/img-reviews-desktop-1x.webp 1x">
                     <!-- 1x: 80x80; 2x: 160x160 -->
-                    <img width="80" height="80" srcset="img/img-reviews-desktop-2x.png 2x"
+                    <img loading="lazy" width="80" height="80" srcset="img/img-reviews-desktop-2x.png 2x"
                       src="img/img-reviews-desktop-1x.png" alt="Инна Косова">
                   </picture>
                 </div>
@@ -941,16 +952,16 @@
               </li>
             </ul>
           </div>
-          <button
+          <button type="button"
             class="reviews__button reviews__button--previous slider__button visually-hidden slider__button--previous swiper-button-prev"
-            type="button" aria-label="Предыдущий отзыв">
+            aria-label="Предыдущий отзыв">
             <svg width="18" height="34" role="img" fill="none">
               <use xlink:href="img/sprite_auto.svg#vector"></use>
             </svg>
           </button>
-          <button
+          <button type="button"
             class="reviews__button reviews__button--next slider__button visually-hidden slider__button--next swiper-button-next"
-            type="button" aria-label="Следующий отзыв">
+            aria-label="Следующий отзыв">
             <svg width="18" height="34" role="img">
               <use xlink:href="img/sprite_auto.svg#vector" fill="none"></use>
             </svg>
@@ -1036,7 +1047,10 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo" aria-label="Логотип Фитнес-Центра SuperGym">
+      <a class="footer__logo">
+        <span class="visually-hidden">
+          Логотип Фитнес-клуба SuperGym
+        </span>
         <svg width="89" height="20" role="img">
           <use xlink:href="img/sprite_auto.svg#logo"></use>
         </svg>
@@ -1044,27 +1058,27 @@
       <nav class="footer__nav nav">
         <ul>
           <li>
-            <a href="">
+            <a href="#">
               Услуги
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               Абонементы
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               Акции
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               Тренеры
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               Расписание
             </a>
           </li>
@@ -1074,21 +1088,21 @@
         <ul>
           <li>
             <a href="#">
-              <svg width="25" height="25" role="img" aria-label="Логотип Vkontakte">
+              <svg width="25" height="25" role="img" aria-label="Перейти на страницу фитнес клуба в Vkontakte">
                 <use xlink:href="img/sprite_auto.svg#logo-vk-ellipse"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#">
-              <svg width="25" height="25" role="img" aria-label="Логотип Odnoklassniky">
+              <svg width="25" height="25" role="img" aria-label="Перейти на страницу фитнес клуба в Odnoklassniky">
                 <use xlink:href="img/sprite_auto.svg#logo-ok-ellipse"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#">
-              <svg width="25" height="25" role="img" aria-label="Логотип Reddit">
+              <svg width="25" height="25" role="img" aria-label="Перейти на страницу фитнес клуба в Reddit">
                 <use xlink:href="img/sprite_auto.svg#logo-rd-ellipse"></use>
               </svg>
             </a>

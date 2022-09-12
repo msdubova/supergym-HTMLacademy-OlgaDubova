@@ -10,8 +10,10 @@
 
       width: 268px;
     }
+
     .coaches__img {
       left: calc(50% - 134px);
+      background: none;
     }
 
     img {
@@ -34,21 +36,17 @@
     h4 {
       margin-right: 35px;
     }
+
     .coaches__slider {
       width: 83.5%;
     }
-    // .coaches__wrapper {
-    //   height: 294px;
-    // }
-
-
-    li {
-    }
   }
+
   @include vp-767 {
     h4 {
       margin-right: 25px;
     }
+
     li {
       margin-bottom: 13px;
 
@@ -60,6 +58,7 @@
         margin-bottom: 0;
       }
     }
+
     .coaches__container {
       padding-top: 22px;
       padding-bottom: 58px;
@@ -72,6 +71,7 @@
     .coaches__img {
       left: calc(50% - 113px);
     }
+
     .coaches__info {
       left: calc(50% - 113px);
 
@@ -79,18 +79,17 @@
       padding: 52px 24px 42px 24px;
     }
 
-
     img {
       width: 226px;
       height: 274px;
     }
-
 
     .coaches__button {
       top: 62.5%;
 
       width: 10px;
       height: 19px;
+
       &--previous {
         left: 4%;
       }
@@ -106,12 +105,10 @@
     padding-bottom: 107px;
   }
 
-  // .coaches__wrapper {
-  //   flex-wrap: wrap;
-  // }
   img {
     width: 260px;
     height: 294px;
+
     object-fit: cover;
   }
 
@@ -123,12 +120,12 @@
 
   h3 {
     margin-top: 22px;
-margin-right: 7px;
+    margin-right: 7px;
     margin-bottom: 0;
 
     font-size: 18px;
     line-height: 27px;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", "Arial", sans-serif;
   }
 
   ul {
@@ -148,15 +145,15 @@ margin-right: 7px;
   }
 
   .coaches__slider {
-    position: relative;;
+    position: relative;
   }
-
 
   .coaches__img {
     position: absolute;
     top: 0;
     z-index: 1;
 
+    background-color: $color-primary-black;
     width: 100%;
     height: fit-content;
   }
@@ -182,9 +179,7 @@ margin-right: 7px;
   }
 }
 
-
 .coaches__item {
-  touch-action: auto;
   position: relative;
 
   display: flex;
@@ -194,20 +189,18 @@ margin-right: 7px;
   overflow: hidden;
 
   @include vp-1199 {
-
-
-.coaches__img {
-  pointer-events: auto;
-}
+    .coaches__img {
+      pointer-events: auto;
+    }
 
     &--hover {
       &::after {
         left: calc(50% - 134px);
+
         width: 268px;
       }
     }
   }
-
 
   @include vp-767 {
     height: 274px;
@@ -221,16 +214,11 @@ margin-right: 7px;
     }
   }
 
-
-  // &:hover {
-
-  //   @include set-hover();
-  // }
+  touch-action: auto;
 
   &--hover {
     @include set-hover();
   }
-
 }
 
 .coaches__skills {
@@ -240,7 +228,7 @@ margin-right: 7px;
   margin-left: 22px;
 
   @include vp-767 {
-      padding-left: 25px;
+    padding-left: 25px;
   }
 
   h4 {
@@ -253,12 +241,13 @@ margin-right: 7px;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     color: $color-lightgrey;
   }
 
   li {
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -273,5 +262,3 @@ margin-right: 7px;
     }
   }
 }
-
-

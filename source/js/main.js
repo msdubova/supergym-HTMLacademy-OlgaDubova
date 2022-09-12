@@ -53,7 +53,6 @@ function setTab() {
   const tabsBtn = subscription.querySelectorAll('.subscription__option');
   const nav = subscription.querySelector('.subscription__nav');
 
-
   nav.classList.remove('subscription__nav--nojs');
 
   titles.forEach(function (item) {
@@ -103,9 +102,6 @@ function setupVideo() {
     button.remove();
     video.appendChild(iframe);
   });
-
-  // link.removeAttribute('href');
-  video.classList.add('video--enabled');
 }
 
 // Функция создает iframe для подключения к странице в качестве видео
@@ -138,10 +134,9 @@ function setHoverMouseEnter(item) {
     const items = document.querySelectorAll('.coaches__item');
 
     for (let y = 0; y < items.length; y++) {
-
-        items[y].classList.remove('coaches__item--hover');
-
+      items[y].classList.remove('coaches__item--hover');
     }
+
     if (item.classList.contains('coaches__item--hover')) {
       item.classList.remove('coaches__item--hover');
     }

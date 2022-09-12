@@ -1,5 +1,6 @@
 .subscription {
   position: relative;
+
   background-color: $color-secondary-grey;
 
   @include vp-1199 {
@@ -8,9 +9,11 @@
 
     // -ms-overflow-style: none;
     // scrollbar-width: none;
+
     h2 {
       margin-bottom: 15px;
     }
+
     .subscription__container {
       padding-top: 51px;
       padding-bottom: 59px;
@@ -29,11 +32,11 @@
       padding-left: 20px;
     }
 
-
     .subscription__img {
       top: 82.1%;
       right: 0;
     }
+
     ul {
       flex-direction: column;
       align-items: center;
@@ -48,6 +51,7 @@
       width: 70%;
     }
   }
+
   @include vp-767 {
     h2 {
       margin-bottom: 5px;
@@ -57,26 +61,31 @@
       font-size: 22px;
       line-height: 22px;
     }
+
     p {
       margin-top: 45px;
       margin-bottom: 10px;
 
       font-size: 48px;
     }
+
     svg {
       width: 24px;
       height: 33px;
       margin-left: 10px;
     }
+
     b {
       top: 25%;
 
       font-size: 80px;
     }
+
     .subscription__container {
       padding-top: 22px;
       padding-bottom: 35px;
     }
+
     li {
       width: 100%;
       margin-bottom: 35px;
@@ -86,11 +95,13 @@
     .subscription__img {
       display: none;
     }
+
     .subscription__nav {
       justify-content: space-between;
       width: 100%;
       margin-bottom: 34px;
     }
+
     .subscription__option {
       margin-right: 0;
       padding-bottom: 13px;
@@ -106,6 +117,7 @@
       width: 100%;
     }
   }
+
   h2 {
     margin-bottom: 20px;
   }
@@ -133,19 +145,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 360px;
+    width: 31%;
     margin-bottom: 30px;
     padding: 55px 69px 50px;
 
     background-color: $color-default-white;
     border: 7px solid transparent;
-
-    &:hover {
-      border: solid;
-      border-width: 7px;
-      border-image-source: $gradient-border;
-      border-image-slice: 1;
-    }
   }
 
   b {
@@ -155,7 +160,7 @@
     font-weight: 700;
     font-size: 100px;
     line-height: 150px;
-    color: #e8e8e8;
+    color: $color-primary-grey;
 
     opacity: 0.48;
   }
@@ -180,8 +185,6 @@
   }
 
   .subscription__container {
-
-
     padding-top: 70px;
     padding-bottom: 90px;
   }
@@ -203,7 +206,7 @@
       width: 100%;
       height: 2px;
 
-      background-color: rgba(120, 120, 120, 0.2);;
+      background-color: rgba(120, 120, 120, 0.2);
     }
 
     &--nojs {
@@ -219,7 +222,8 @@
 
     border: 2px solid $color-darkblue;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-default-white;
 
       background: $gradient-button;
@@ -241,7 +245,7 @@
 
     font-size: 20px;
     line-height: 30px;
-
+    color: $color-primary-black-opacity-05;
     background: none;
     border: none;
     cursor: pointer;
@@ -252,9 +256,10 @@
 
     &--active {
       position: relative;
+      color: $color-primary-black;
 
       &::after {
-        content: "" ;
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
@@ -270,6 +275,11 @@
 
 
 .subscription li:hover {
+  border: solid;
+  border-width: 7px;
+  border-image-source: $gradient-border;
+  border-image-slice: 1;
+
   & a {
     padding-top: 25px;
 

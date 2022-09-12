@@ -16,6 +16,7 @@
     p {
       font-size: 18px;
     }
+
     .feedback__container {
       flex-direction: column;
       padding: 0;
@@ -25,6 +26,7 @@
     .feedback__wrapper {
       padding: 13px 0;
     }
+
     .feedback__block {
       width: 100%;
       padding: 21px 163px 30px 133px;
@@ -58,6 +60,7 @@
     .feedback__container {
       padding-bottom: 19px;
     }
+
     .feedback__block {
       padding: 22px 15px;
     }
@@ -68,13 +71,16 @@
 
     .feedback__box {
       padding: 0;
+
       &--border {
         width: 100%;
+
         &::after {
           display: none;
         }
       }
     }
+
     p {
       width: 100%;
       margin-bottom: 13px;
@@ -127,6 +133,7 @@
 
   .feedback__box {
     padding-left: 58px;
+
     &--border {
       position: relative;
 

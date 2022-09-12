@@ -2,6 +2,7 @@
   box-sizing: border-box;
   min-width: 320px;
   height: 100%;
+  overflow-x: hidden;
 
   font-style: normal;
   font-weight: 400;
@@ -10,7 +11,7 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: $color-primary-black;
   letter-spacing: 0;
-overflow-x: hidden;
+
   scroll-behavior: smooth;
 }
 
@@ -59,7 +60,6 @@ overflow-x: hidden;
   font-family: "Bebas Neue", "Arial", sans-serif;
   text-align: center;
   letter-spacing: 0.03em;
-  // color: $color-primary-black;
 }
 
 .page h1 {
@@ -82,9 +82,7 @@ overflow-x: hidden;
 
   @include vp-767 {
     font-size: 32px;
-line-height: 32px;
-
-
+    line-height: 32px;
   }
 }
 
@@ -94,9 +92,7 @@ line-height: 32px;
   font-weight: 700;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   text-align: center;
-  // letter-spacing: 0;
 }
-
 
 .page svg {
   display: inline-block;

@@ -12,33 +12,33 @@
       display: grid;
 
       grid-auto-flow: column;
-      // grid-template-columns: 55% 45%;
       grid-template-rows: 1fr 1fr  1fr;
       grid-column-gap: 28px;
-      // grid-auto-flow: row;
-      // }
     }
+
     li {
       display: flex;
+
       &:first-child {
         grid-row-start: 2;
       }
 
-
-      a {padding: 11px;
+      a {
+        padding: 11px;
         padding-left: 0;
         padding-right: 0;
         font-size: 16px;
         line-height: 18px;
-
       }
     }
   }
+
   @include vp-1199 {
     li {
       margin-right: 10px;
     }
   }
+
   a {
     padding: 10px;
 
@@ -47,6 +47,7 @@
 
   ul {
     display: flex;
+    flex-wrap: wrap;
   }
 
   li {

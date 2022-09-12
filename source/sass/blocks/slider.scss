@@ -1,16 +1,7 @@
 .slider {
   position: relative;
 
-  .slider__wrapper {
-    // display: flex;
-  }
-
   .slider__button {
-
-    @include vp-767 {
-      width: 10px;
-      height: 19px;
-    }
     width: 16px;
     height: 32px;
 
@@ -19,6 +10,16 @@
     background-size: contain;
     border: none;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      outline-color: $color-lightgrey;
+    }
+
+    @include vp-767 {
+      width: 10px;
+      height: 19px;
+    }
 
     &::after {
       display: none;
@@ -31,7 +32,7 @@
     &--next {
       right: 47px;
 
-      transform: scale(-1, 1) ;
+      transform: scale(-1, 1);
     }
   }
 }

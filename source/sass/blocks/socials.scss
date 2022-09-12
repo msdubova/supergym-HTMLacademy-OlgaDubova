@@ -1,14 +1,18 @@
 .socials {
-flex-shrink: 0;
-@include vp-767 {
-  li{
-    margin-left: 0;
-    margin-right: 11px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+
+  @include vp-767 {
+    li {
+      margin-right: 11px;
+      margin-left: 0;
+    }
   }
-}
+
   ul {
-    @include reset-ul;
     display: flex;
+
+    @include reset-ul;
   }
 
   li {
@@ -18,7 +22,6 @@ flex-shrink: 0;
   svg {
     display: inline-block;
 
-
-        vertical-align: middle;
+    vertical-align: middle;
   }
 }

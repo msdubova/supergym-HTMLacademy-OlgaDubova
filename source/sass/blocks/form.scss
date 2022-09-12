@@ -5,22 +5,26 @@
     fieldset {
       padding-bottom: 35px;
     }
-    p{
+
+    p {
       margin-bottom: 35px;
     }
-button {
-  margin-top: 4px;
-}
 
+    button {
+      margin-top: 4px;
+    }
   }
+
   @include vp-1199 {
     fieldset {
       width: 100%;
       padding: 27px 0;
     }
+
     p {
       width: 44%;
-font-size: 14px;
+
+      font-size: 14px;
     }
   }
 
@@ -45,10 +49,11 @@ font-size: 14px;
     width: 100%;
     padding-bottom: 5px;
 
+    color: $color-default-white;
+
     background: none;
     border: none;
     border-bottom: $color-darkgrey 1px solid;
-    color: $color-default-white;
 
     &::placeholder {
       color: $color-default-white;
