@@ -52,6 +52,7 @@ function setTab() {
   const tabs = subscription.querySelectorAll('ul');
   const tabsBtn = subscription.querySelectorAll('.subscription__option');
   const nav = subscription.querySelector('.subscription__nav');
+  const buttons = subscription.querySelectorAll('.subscription__button');
 
   nav.classList.remove('subscription__nav--nojs');
 
@@ -63,11 +64,16 @@ function setTab() {
     item.classList.add('visually-hidden');
   });
 
+  buttons.forEach(function (item) {
+    item.setAttribute('tabindex', '-1');
+  });
+
   tabsBtn.forEach(function (item) {
     item.addEventListener('click', function () {
       let currentBtn = item;
       let tabId = currentBtn.getAttribute('data-tab');
       let currentTab = subscription.querySelector(tabId);
+      let currentButtons = currentTab.querySelectorAll('.subscription__button');
 
       if (!currentBtn.classList.contains('visually-hidden')) {
         tabsBtn.forEach(function (button) {
@@ -80,6 +86,9 @@ function setTab() {
 
         currentBtn.classList.add('subscription__option--active');
         currentTab.classList.remove('visually-hidden');
+        currentButtons.forEach(function (currentButton) {
+          currentButton.setAttribute('tabindex', '0');
+        });
       }
 
     });
