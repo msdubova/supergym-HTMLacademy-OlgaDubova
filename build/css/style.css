@@ -3947,6 +3947,27 @@ button,
     margin: 0;
     margin-bottom: 40px;
     padding-top: 35px;
+    position: relative;
+  }
+
+  .advantages__block--special::before {
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background-color: #102654;
+    left: -14px;
+    top: 0;
+  }
+
+  .advantages__block--special::after {
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background-color: #102654;
+    right: -14px;
+    top: 0;
   }
 
   .advantages__block--special span:last-child {

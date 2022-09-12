@@ -209,6 +209,27 @@
     margin: 0;
     margin-bottom: 40px;
     padding-top: 35px;
+    position: relative;
+
+    &::before {
+      width: 15px;
+      height: 100%;
+      position: absolute;
+      content: "";
+      background-color: $color-primary-black;
+      left: -14px;
+      top: 0;
+    }
+
+    &::after {
+      width: 15px;
+      height: 100%;
+      position: absolute;
+      content: "";
+      background-color: $color-primary-black;
+      right: -14px;
+      top: 0;
+    }
 
     & span:last-child {
       line-height: 20px;
