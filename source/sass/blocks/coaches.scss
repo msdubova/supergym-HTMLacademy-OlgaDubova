@@ -13,6 +13,7 @@
 
     .coaches__img {
       left: calc(50% - 134px);
+
       background: none;
     }
 
@@ -23,6 +24,9 @@
 
     h2 {
       margin-bottom: 42px;
+      font-size: 42px;
+      line-height: 42px;
+      text-align: center;
     }
 
     h3 {
@@ -43,6 +47,11 @@
   }
 
   @include vp-767 {
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
     h4 {
       margin-right: 25px;
     }
@@ -113,9 +122,16 @@
   }
 
   h2 {
+    display: block;
+    margin-top: 48px;
     margin-bottom: 52px;
 
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 49px;
+    font-family: "Bebas Neue", "Arial", sans-serif;
     text-align: left;
+    letter-spacing: 0.03em;
   }
 
   h3 {
@@ -153,9 +169,10 @@
     top: 0;
     z-index: 1;
 
-    background-color: $color-primary-black;
     width: 100%;
     height: fit-content;
+
+    background-color: $color-primary-black;
   }
 
   .coaches__info {
@@ -212,7 +229,6 @@
       }
     }
   }
-
   touch-action: auto;
 
   &--hover {

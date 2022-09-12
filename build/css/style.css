@@ -1393,34 +1393,6 @@ button,
   opacity: 0.2;
 }
 
-.page h1,
-.page h2 {
-  display: block;
-  font-weight: 700;
-  font-family: "Bebas Neue", "Arial", sans-serif;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.page h1 {
-  font-size: 109px;
-  line-height: 110px;
-}
-
-.page h2 {
-  margin-top: 48px;
-  margin-bottom: 52px;
-  font-size: 49px;
-  line-height: 49px;
-}
-
-.page h3 {
-  margin-top: 0;
-  font-weight: 700;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  text-align: center;
-}
-
 .page svg {
   display: inline-block;
   vertical-align: middle;
@@ -1722,30 +1694,39 @@ button,
 }
 
 .header h1 {
+  display: block;
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
   width: 300px;
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
+  font-weight: 700;
+  font-size: 109px;
+  line-height: 110px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
   text-align: right;
   color: #ffffff;
+  letter-spacing: 0.03em;
   word-wrap: break-word;
   -webkit-text-stroke: 2px #ffffff;
 }
 
 .header h2 {
+  display: block;
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   font-weight: 400;
   font-size: 49px;
   line-height: 59px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
   text-align: right;
   color: #ffffff;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .header .header__container {
@@ -1799,7 +1780,7 @@ button,
 
 .header .header__ul {
   position: absolute;
-  top: 54.6%;
+  top: 54.8%;
   left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1860,7 +1841,15 @@ button,
 }
 
 .gym h2 {
+  display: block;
+  margin-top: 48px;
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .gym span {
@@ -1922,7 +1911,19 @@ button,
 }
 
 .subscription h2 {
+  display: block;
+  margin-top: 48px;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.subscription h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .subscription h4 {
@@ -2105,12 +2106,15 @@ button,
 }
 
 .application h2 {
+  display: block;
   max-width: 201px;
   margin: 0;
+  font-weight: 700;
   font-size: 90px;
   line-height: 90px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   text-align: left;
+  letter-spacing: 0.03em;
   word-wrap: break-word;
 }
 
@@ -2259,8 +2263,15 @@ button,
 }
 
 .coaches h2 {
+  display: block;
+  margin-top: 48px;
   margin-bottom: 52px;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
   text-align: left;
+  letter-spacing: 0.03em;
 }
 
 .coaches h3 {
@@ -2297,11 +2308,11 @@ button,
   position: absolute;
   top: 0;
   z-index: 1;
-  background-color: #102654;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: #102654;
 }
 
 .coaches .coaches__info {
@@ -2409,13 +2420,22 @@ button,
 }
 
 .advantages h2 {
+  display: block;
+  margin-top: 48px;
   margin-bottom: 0;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .advantages h3 {
   margin: 5px 0;
   font-size: 22px;
   line-height: 33px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   text-align: left;
   color: #102654;
   text-transform: none;
@@ -2550,7 +2570,15 @@ button,
 }
 
 .offers h2 {
+  display: block;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 48px;
   margin-bottom: 52px;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
 }
 
 .offers img {
@@ -2563,6 +2591,7 @@ button,
 .offers h3 {
   margin-top: 0;
   margin-bottom: 6px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
   line-height: 31px;
   text-align: left;
@@ -2699,11 +2728,21 @@ button,
 }
 
 .reviews h2 {
+  display: block;
+  margin-top: 48px;
   margin-bottom: 52px;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .reviews h3 {
+  margin-top: 0;
   margin-bottom: 13px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -2795,7 +2834,15 @@ button,
 }
 
 .feedback h2 {
+  display: block;
+  margin-top: 48px;
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .feedback h4 {
@@ -2997,12 +3044,6 @@ button,
     padding: 0 45px;
   }
 
-  .page h2 {
-    font-size: 42px;
-    line-height: 42px;
-    text-align: center;
-  }
-
   .button {
     width: auto;
   }
@@ -3086,9 +3127,9 @@ button,
     -ms-flex-align: stretch;
     align-items: stretch;
     width: 350px;
-    padding: 50px 20px 22px 24px;
     margin-right: 1.65%;
     margin-left: auto;
+    padding: 50px 20px 22px 24px;
   }
 
   .header .header__img {
@@ -3123,6 +3164,9 @@ button,
 
   .gym h2 {
     margin-bottom: 14px;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
   }
 
   .gym span {
@@ -3172,6 +3216,9 @@ button,
 
   .subscription h2 {
     margin-bottom: 15px;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
   }
 
   .subscription .subscription__container {
@@ -3314,6 +3361,9 @@ button,
 
   .coaches h2 {
     margin-bottom: 42px;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
   }
 
   .coaches h3 {
@@ -3342,6 +3392,9 @@ button,
 
   .advantages h2 {
     margin-bottom: 42px;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
   }
 
   .advantages h3 {
@@ -3455,6 +3508,9 @@ button,
 
   .offers h2 {
     margin-bottom: 39px;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
   }
 
   .reviews {
@@ -3463,6 +3519,9 @@ button,
 
   .reviews h2 {
     margin-bottom: 40px;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
   }
 
   .reviews ul {
@@ -3492,6 +3551,12 @@ button,
   .feedback {
     background: none;
     border: none;
+  }
+
+  .feedback h2 {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
   }
 
   .feedback h4 {
@@ -3614,11 +3679,6 @@ button,
     outline: none;
   }
 
-  .page h2 {
-    font-size: 32px;
-    line-height: 32px;
-  }
-
   .button {
     width: 100%;
     padding: 25px 33px;
@@ -3703,9 +3763,9 @@ button,
 
   .header .header__button {
     width: 100%;
+    margin-bottom: 10px;
     padding: 20px;
     padding-top: 21px;
-    margin-bottom: 10px;
   }
 
   .header .header__container {
@@ -3739,6 +3799,8 @@ button,
   .gym h2 {
     margin-top: 70px;
     margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 32px;
   }
 
   .gym span {
@@ -3763,6 +3825,7 @@ button,
   }
 
   .gym .gym__img {
+    height: auto;
     margin-bottom: 40px;
   }
 
@@ -3775,6 +3838,8 @@ button,
 
   .subscription h2 {
     margin-bottom: 5px;
+    font-size: 32px;
+    line-height: 32px;
   }
 
   .subscription h4 {
@@ -3861,6 +3926,11 @@ button,
     width: 100%;
   }
 
+  .coaches h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
   .coaches h4 {
     margin-right: 25px;
   }
@@ -3929,6 +3999,8 @@ button,
 
   .advantages h2 {
     margin-bottom: 43px;
+    font-size: 32px;
+    line-height: 32px;
   }
 
   .advantages h3 {
@@ -3989,31 +4061,31 @@ button,
   }
 
   .advantages__block--special {
+    position: relative;
     width: 100%;
     margin: 0;
     margin-bottom: 40px;
     padding-top: 35px;
-    position: relative;
   }
 
   .advantages__block--special::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -14px;
     width: 15px;
     height: 100%;
-    position: absolute;
-    content: "";
     background-color: #102654;
-    left: -14px;
-    top: 0;
   }
 
   .advantages__block--special::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -14px;
     width: 15px;
     height: 100%;
-    position: absolute;
-    content: "";
     background-color: #102654;
-    right: -14px;
-    top: 0;
   }
 
   .advantages__block--special span:last-child {
@@ -4030,6 +4102,8 @@ button,
   }
 
   .offers h2 {
+    font-size: 32px;
+    line-height: 32px;
     margin-bottom: 42px;
   }
 
@@ -4107,6 +4181,8 @@ button,
   .reviews h2 {
     margin-top: 30px;
     margin-bottom: 42px;
+    font-size: 32px;
+    line-height: 32px;
   }
 
   .reviews h3 {
@@ -4149,8 +4225,13 @@ button,
     margin: 0;
   }
 
+  .feedback h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
   .feedback .feedback__container {
-    padding-bottom: 19px;
+    padding-bottom: 30px;
   }
 
   .feedback .feedback__block {

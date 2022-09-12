@@ -8,6 +8,9 @@
 
     h2 {
       margin-bottom: 15px;
+      font-size: 42px;
+      line-height: 42px;
+      text-align: center;
     }
 
     .subscription__container {
@@ -51,6 +54,8 @@
   @include vp-767 {
     h2 {
       margin-bottom: 5px;
+      font-size: 32px;
+      line-height: 32px;
     }
 
     h4 {
@@ -115,7 +120,20 @@
   }
 
   h2 {
+    display: block;
+    margin-top: 48px;
     margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 49px;
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  h3 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
   }
 
   h4 {
@@ -242,6 +260,7 @@
     font-size: 20px;
     line-height: 30px;
     color: $color-primary-black-opacity-05;
+
     background: none;
     border: none;
     cursor: pointer;
@@ -252,6 +271,7 @@
 
     &--active {
       position: relative;
+
       color: $color-primary-black;
 
       &::after {

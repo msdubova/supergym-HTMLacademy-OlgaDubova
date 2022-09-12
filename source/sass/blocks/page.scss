@@ -49,48 +49,6 @@
   }
 }
 
-.page h1,
-.page h2 {
-  display: block;
-
-  font-weight: 700;
-  font-family: "Bebas Neue", "Arial", sans-serif;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.page h1 {
-  font-size: 109px;
-  line-height: 110px;
-}
-
-.page h2 {
-  margin-top: 48px;
-  margin-bottom: 52px;
-
-  font-size: 49px;
-  line-height: 49px;
-
-  @include vp-1199 {
-    font-size: 42px;
-    line-height: 42px;
-    text-align: center;
-  }
-
-  @include vp-767 {
-    font-size: 32px;
-    line-height: 32px;
-  }
-}
-
-.page h3 {
-  margin-top: 0;
-
-  font-weight: 700;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  text-align: center;
-}
-
 .page svg {
   display: inline-block;
 

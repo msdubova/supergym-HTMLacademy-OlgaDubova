@@ -6,6 +6,12 @@
     background: none;
     border: none;
 
+    h2 {
+      font-size: 42px;
+      line-height: 42px;
+      text-align: center;
+    }
+
     h4 {
       margin-bottom: 12px;
 
@@ -61,8 +67,13 @@
   }
 
   @include vp-767 {
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
     .feedback__container {
-      padding-bottom: 19px;
+      padding-bottom: 30px;
     }
 
     .feedback__block {
@@ -97,7 +108,16 @@
   }
 
   h2 {
+    display: block;
+    margin-top: 48px;
     margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 49px;
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
 
   h4 {
