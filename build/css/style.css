@@ -1430,6 +1430,14 @@ button,
   width: 100%;
 }
 
+.page a,
+.page button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .button {
   display: inline-block;
   -webkit-box-align: center;

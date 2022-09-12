@@ -103,3 +103,8 @@
 .page img {
   width: 100%;
 }
+
+.page a,
+.page button {
+  user-select: none;
+}
