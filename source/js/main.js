@@ -45,23 +45,89 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // используйте .closest(el)
 
+import Swiper, {Navigation, Pagination} from 'swiper';
+
+Swiper.use([Navigation, Pagination]);
+
+const swiperReviews = new Swiper('.reviews__wrapper', {
+  spaceBetween: 40,
+  autoHeight: true,
+  direction: 'horizontal',
+  simulateTouch: true,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  loop: false,
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.reviews__button--next.swiper-button-next',
+    prevEl: '.reviews__button--previous.swiper-button-prev',
+  },
+});
+
+const swiperCoaches = new Swiper('.coaches__slider', {
+  spaceBetween: 0,
+  slidesPerView: 1,
+  direction: 'horizontal',
+  simulateTouch: true,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.coaches__button--next',
+    prevEl: '.coaches__button--previous',
+  },
+  breakpoints: {
+
+    320: {
+      spaceBetween: 40,
+      slidesPerView: 1,
+      initialSlide: 2,
+    },
+
+    768: {
+      spaceBetween: 30,
+      slidesPerView: 2,
+      initialSlide: 2,
+    },
+
+    1200: {
+      spaceBetween: 40,
+      slidesPerView: 4,
+      initialSlide: 0,
+    },
+  },
+});
+
+swiperReviews.init();
+swiperCoaches.init();
+
 // Функция делает активным таб в разделе Абонементы
 function setTab() {
-  const subscription = document.querySelector('.subscription');
-  const titles = subscription.querySelectorAll('h3');
-  const tabs = subscription.querySelectorAll('ul');
-  const tabsBtn = subscription.querySelectorAll('.subscription__option');
+  const subscription = document.querySelector('.tab');
+  const titles = subscription.querySelectorAll('.tab__title');
+  const tabs = subscription.querySelectorAll('.tab__block');
+  const tabsBtn = subscription.querySelectorAll('.tab__button');
   const nav = subscription.querySelector('.subscription__nav');
   const buttons = subscription.querySelectorAll('.subscription__button');
 
   nav.classList.remove('subscription__nav--nojs');
 
   titles.forEach(function (item) {
-    item.classList.add('visually-hidden');
+    item.classList.add('tab__title--hidden');
   });
 
   tabs.forEach(function (item) {
-    item.classList.add('visually-hidden');
+    item.classList.add('tab__block--hidden');
   });
 
   buttons.forEach(function (item) {
@@ -81,11 +147,11 @@ function setTab() {
         });
 
         tabs.forEach(function (tab) {
-          tab.classList.add('visually-hidden');
+          tab.classList.add('tab__block--hidden');
         });
 
         currentBtn.classList.add('subscription__option--active');
-        currentTab.classList.remove('visually-hidden');
+        currentTab.classList.remove('tab__block--hidden');
         currentButtons.forEach(function (currentButton) {
           currentButton.setAttribute('tabindex', '0');
         });
@@ -156,9 +222,6 @@ function setHoverMouseEnter(item) {
 // Функция иммитирует закрытие ховера когда курсор покидает область  карточки тренера в режиме десктоп
 function setHoverMouseLeave(item) {
   if (window.innerWidth >= 1200) {
-    // if (item.classList.contains('coaches__item--hover')) {
-    //   item.classList.remove('coaches__item--hover');
-    // }
     item.classList.remove('coaches__item--hover');
   }
 }
@@ -279,8 +342,19 @@ function setJavaScript() {
   video.remove();
 }
 
+
+// Функция, которая запускает блок в случае, если таковой имеется на странице
+
+function checkBlock(block, doIt) {
+  if (document.body.contains(block)) {
+    doIt();
+  }
+}
+
+const tabs = document.querySelector('.tab');
+
 setJavaScript();
 setupVideo();
-setTab();
+checkBlock(tabs, setTab);
 setHover();
 maskPhone();

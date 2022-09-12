@@ -53,7 +53,8 @@
           </a>
         </div>
         <div class="header__img">
-          <picture>
+          <div class="header__picture">
+            <picture>
             <!-- 1x: 324x390; 2x: 648x780 -->
             <source type="image/webp" media="(max-width: 1199px)"
               srcset="img/img-header-tablet-2x.webp 2x, img/img-header-tablet-1x.webp 1x">
@@ -67,6 +68,8 @@
             <img loading="lazy" width="500" height="556" srcset="img/img-header-desktop-2x.png 2x"
               src="img/img-header-desktop-1x.png" alt="Изображение Фитнес-клуба SuperGym">
           </picture>
+          </div>
+
           <ul class=" header__socials">
             <li>
               <a href="#" aria-label="Перейти в сообщество Фитнес-клуба SuperGym в Facebook">
@@ -187,17 +190,17 @@
             src="img/img-slider-desktop-1x.png" alt="Декоративное изображение - инвентарь">
         </picture>
       </div>
-      <div class="subscription__container container">
+      <div class="subscription__container container tab">
         <h2>АБОНЕМЕНТЫ</h2>
         <div class="subscription__nav subscription__nav--nojs">
-          <button data-tab="#tab_1" class="subscription__option" type="button">1 месяц</button>
-          <button data-tab="#tab_2" class="subscription__option " type="button">6 месяцев</button>
-          <button data-tab="#tab_3" class="subscription__option " type="button">12 месяцев</button>
+          <button data-tab="#tab_1" class="subscription__option tab__button"  type="button">1 месяц</button>
+          <button data-tab="#tab_2" class="subscription__option tab__button"  type="button">6 месяцев</button>
+          <button data-tab="#tab_3" class="subscription__option tab__button"  type="button">12 месяцев</button>
         </div>
         <div class="subscription__tabs">
-          <ul id="tab_1">
+          <ul class="tab__block" id="tab_1">
             <li>
-              <h3>
+              <h3 class="tab__title">
                 1&nbsp;месяц
               </h3>
               <h4>
@@ -220,7 +223,7 @@
               </a>
             </li>
             <li>
-              <h3>
+              <h3 class="tab__title">
                 6&nbsp;месяцев
               </h3>
               <h4>
@@ -240,7 +243,7 @@
               </a>
             </li>
             <li>
-              <h3>
+              <h3 class="tab__title">
                 12&nbsp;месяцев
               </h3>
               <h4>
@@ -260,9 +263,9 @@
               </a>
             </li>
           </ul>
-          <ul id="tab_2">
+          <ul class="tab__block" id="tab_2">
             <li>
-              <h3>
+              <h3 class="tab__title">
                 1&nbsp;месяц
               </h3>
               <h4>
@@ -282,7 +285,7 @@
               </a>
             </li>
             <li>
-              <h3>
+              <h3 class="tab__title">
                 6&nbsp;месяцев
               </h3>
               <h4>
@@ -302,7 +305,7 @@
               </a>
             </li>
             <li>
-              <h3>
+              <h3 class="tab__title">
                 12&nbsp;месяцев
               </h3>
               <h4>
@@ -322,9 +325,9 @@
               </a>
             </li>
           </ul>
-          <ul id="tab_3">
+          <ul class="tab__block" id="tab_3">
             <li>
-              <h3>
+              <h3 class="tab__title">
                 1&nbsp;месяц
               </h3>
               <h4>
@@ -344,7 +347,7 @@
               </a>
             </li>
             <li>
-              <h3>
+              <h3 class="tab__title">
                 6&nbsp;месяцев
               </h3>
               <h4>
@@ -364,7 +367,7 @@
               </a>
             </li>
             <li>
-              <h3>
+              <h3 class="tab__title">
                 12&nbsp;месяцев
               </h3>
               <h4>
@@ -1027,17 +1030,17 @@
                 <h4>
                   Телефон:
                 </h4>
-                <p>
+                <a href="tel:88005555555" aria-label="Номер телефона офиса продаж Фитнес-клуба">
                   8-800-555-55-55
-                </p>
+                </a>
               </div>
               <div>
                 <h4>
                   Email:
                 </h4>
-                <p>
+                <a href="mailto:omsk@supergym.ru" aria-label="Напишите электронное письмо в Фитнес-клуб">
                   omsk@supergym.ru
-                </p>
+                </a>
               </div>
             </div>
           </div>
