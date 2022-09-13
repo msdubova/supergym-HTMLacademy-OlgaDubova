@@ -191,6 +191,15 @@ function createIframe() {
   return iframe;
 }
 
+// Скрывает свойства для отображения без JS
+function setSlider() {
+  const sliders = document.querySelectorAll('.slider');
+
+  for (let i = 0; i < sliders.length; i++) {
+    sliders[i].classList.remove('slider--nojs');
+  }
+}
+
 // Функция иммитирует ховер при клике на карточку тренера в режиме планшет и смартфон
 function setHoverClick(item) {
   if (window.innerWidth < 1200) {
@@ -342,7 +351,6 @@ function setJavaScript() {
   video.remove();
 }
 
-
 // Функция, которая запускает блок в случае, если таковой имеется на странице
 
 function checkBlock(block, doIt) {
@@ -353,6 +361,7 @@ function checkBlock(block, doIt) {
 
 const tabs = document.querySelector('.tab');
 
+setSlider();
 setJavaScript();
 setupVideo();
 checkBlock(tabs, setTab);

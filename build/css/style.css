@@ -1393,15 +1393,6 @@ button,
   opacity: 0.2;
 }
 
-.page svg {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.page img {
-  width: 100%;
-}
-
 .page a,
 .page button {
   -webkit-user-select: none;
@@ -1517,6 +1508,16 @@ button,
 
 .slider {
   position: relative;
+}
+
+.slider--nojs .slider__wrapper {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.slider--nojs .slider__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .slider .slider__button {
@@ -1838,6 +1839,10 @@ button,
 
 .gym {
   min-height: 756px;
+}
+
+.gym img {
+  width: 100%;
 }
 
 .gym h2 {
@@ -2583,6 +2588,7 @@ button,
 
 .offers img {
   display: block;
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;

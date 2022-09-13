@@ -1,6 +1,18 @@
 .slider {
   position: relative;
 
+
+  &--nojs {
+    .slider__wrapper {
+      flex-wrap: wrap;
+    }
+
+    .slider__item {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
   .slider__button {
     width: 16px;
     height: 32px;
