@@ -2,6 +2,8 @@
   margin-bottom: 98px;
 
   @include vp-1199 {
+    margin-bottom: 68px;
+
     .offers__container {
       padding-top: 52px;
       padding-bottom: 0;
@@ -31,6 +33,11 @@
     .offers__block {
       width: 48%;
       padding-top: 20px;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
     }
 
     h2 {
@@ -149,11 +156,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 560px;
 
     &--special {
       flex-direction: row;
-
+      flex-wrap: nowrap;
       background-color: $color-primary-red;
     }
   }
@@ -164,6 +172,11 @@
     min-height: 211px;
     padding: 29px;
     padding-top: 25px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     border: solid;
     border-width: 7px;

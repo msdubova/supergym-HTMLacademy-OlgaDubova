@@ -17,6 +17,7 @@ $color-primary-black-opacity-02:    rgba(120, 120, 120, 0.2);
 $color-secondary-black:             #495a7d;
 
 $color-primary-red:                 #ed0233;
+$color-opacity-red:                 #fc96ac8a;
 $color-secondary-red:               #d10a42;
 $color-secondary-red-opacity-02:    rgba(209, 10, 66, 0.2);
 $color-primary-blue:                #103aae;
@@ -33,6 +34,7 @@ $color-lightgrey:                   #b6bdcc;
 
 $color-bg-gym:                      #aeb1bc;
 $color-shadow-review:              rgba(28, 51, 116, 0.2);
+$color-outline-yellow:              #fff2cc;
 
 // gradient
 
@@ -48,7 +50,7 @@ $gradient-advantages-figure:        linear-gradient(142.51deg, #d10a42 0%, #0041
 $gradient-advantages-figure-first:  linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
 $gradient-border:                   linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
 $gradient-feedback: linear-gradient(to right, #102654 50%, #ffffff 50%);
-$shadow:  40px rgba(28, 51, 116, 0.2);
+
 // Typography
 // ---------------------------------
 

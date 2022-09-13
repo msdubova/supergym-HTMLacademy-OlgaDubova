@@ -130,6 +130,11 @@
 
     font-size: 14px;
     line-height: 21px;
+
+    &:hover,
+    &:focus {
+      outline-color: $color-outline-yellow;
+    }
   }
 
   p {

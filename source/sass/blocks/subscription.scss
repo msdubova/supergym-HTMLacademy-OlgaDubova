@@ -44,6 +44,7 @@
     li {
       width: 70%;
       margin-bottom: 41px;
+      margin-right: 0;
     }
 
     .subscription__button {
@@ -144,6 +145,14 @@
     line-height: 28.64px;
   }
 
+  button {
+    &:hover,
+    &:focus {
+      outline-color: $color-opacity-red;
+      border-radius: 7px;
+    }
+  }
+
   ul {
     display: flex;
     justify-content: space-between;
@@ -161,10 +170,15 @@
     align-items: center;
     width: 31%;
     margin-bottom: 30px;
+    margin-right: 40px;
     padding: 55px 69px 50px;
 
     background-color: $color-default-white;
     border: 7px solid transparent;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   b {

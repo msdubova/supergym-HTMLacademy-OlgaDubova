@@ -1,6 +1,7 @@
 new Swiper('.reviews__wrapper', {
   spaceBetween: 40,
   autoHeight: true,
+  calculateHeight: true,
   direction: 'horizontal',
   simulateTouch: true,
   grabCursor: true,

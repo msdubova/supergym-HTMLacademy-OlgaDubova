@@ -1938,6 +1938,12 @@ button,
   line-height: 28.64px;
 }
 
+.subscription button:hover,
+.subscription button:focus {
+  outline-color: #fc96ac8a;
+  border-radius: 7px;
+}
+
 .subscription ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1966,9 +1972,14 @@ button,
   align-items: center;
   width: 31%;
   margin-bottom: 30px;
+  margin-right: 40px;
   padding: 55px 69px 50px;
   background-color: #ffffff;
   border: 7px solid transparent;
+}
+
+.subscription li:last-child {
+  margin-right: 0;
 }
 
 .subscription b {
@@ -2388,6 +2399,8 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   margin-left: 22px;
+  overflow: scroll;
+  -ms-overflow-style: none;
 }
 
 .coaches__skills h4 {
@@ -2649,6 +2662,8 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 560px;
 }
 
@@ -2657,6 +2672,8 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   background-color: #ed0233;
 }
 
@@ -2671,10 +2688,15 @@ button,
   min-height: 211px;
   padding: 29px;
   padding-top: 25px;
+  margin-bottom: 40px;
   border: solid;
   border-width: 7px;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
+}
+
+.offers .offers__block:last-child {
+  margin-bottom: 0;
 }
 
 .offers .offers__info {
@@ -2776,8 +2798,8 @@ button,
   padding: 58px 62px 56px 62px;
   color: #ffffff;
   background-color: #1c3374;
-  -webkit-box-shadow: 40px rgba(28, 51, 116, 0.2);
-  box-shadow: 40px rgba(28, 51, 116, 0.2);
+  -webkit-box-shadow: rgba(28, 51, 116, 0.2);
+  box-shadow: rgba(28, 51, 116, 0.2);
 }
 
 .reviews img {
@@ -2860,6 +2882,11 @@ button,
   margin: 0;
   font-size: 14px;
   line-height: 21px;
+}
+
+.feedback a:hover,
+.feedback a:focus {
+  outline-color: #fff2cc;
 }
 
 .feedback p {
@@ -3262,6 +3289,7 @@ button,
   .subscription li {
     width: 70%;
     margin-bottom: 41px;
+    margin-right: 0;
   }
 
   .subscription .subscription__button {
@@ -3475,6 +3503,10 @@ button,
     line-height: 28px;
   }
 
+  .offers {
+    margin-bottom: 68px;
+  }
+
   .offers .offers__container {
     padding-top: 52px;
     padding-bottom: 0;
@@ -3510,6 +3542,11 @@ button,
   .offers .offers__block {
     width: 48%;
     padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .offers .offers__block:last-child {
+    margin-bottom: 30px;
   }
 
   .offers h2 {
