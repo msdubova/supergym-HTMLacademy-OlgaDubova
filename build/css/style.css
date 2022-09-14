@@ -1910,7 +1910,6 @@ button,
 
 .gym .gym__video {
   position: absolute;
-  top: 78.5%;
   top: 408px;
   left: 39.5%;
 }
@@ -4206,7 +4205,7 @@ button,
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .offers .offers__container {

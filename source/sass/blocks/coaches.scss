@@ -16,6 +16,7 @@
     h3 {
       margin-right: 0;
     }
+
     h4 {
       margin-right: 35px;
     }
@@ -31,10 +32,12 @@
     .coaches__button {
       bottom: 37%;
     }
+
     img {
       height: 100%;
     }
   }
+
   @include vp-767 {
     h2 {
       font-size: 32px;
@@ -67,6 +70,7 @@
 
       object-fit: cover;
     }
+
     .coaches__container {
       padding-top: 22px;
       padding-bottom: 58px;
@@ -182,72 +186,72 @@
 
   .coaches__button {
     top: auto;
-bottom: 35%;
-}
-
-.coaches__item {
-  position: relative;
-
-  width: 260px;
-  overflow: hidden;
-
-  @include vp-1199 {
-    .coaches__img {
-      pointer-events: auto;
-    }
-  }
-  touch-action: auto;
-
-  &--hover {
-    @include set-hover();
-  }
-}
-
-.coaches__skills {
-  display: none;
-  flex-grow: 1;
-  flex-direction: column;
-  height: 163px;
-  padding-left: 22px;
-  overflow: auto;
-
-  @include vp-767 {
-    padding-left: 25px;
+    bottom: 35%;
   }
 
-  &::-webkit-scrollbar {
-    width: 0;
-  }
-
-  h4 {
-    align-self: center;
-    margin-top: 0;
-    margin-right: 28px;
-    margin-bottom: 35px;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    color: $color-lightgrey;
-  }
-
-  li {
+  .coaches__item {
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 8px;
-      left: -15px;
+    width: 260px;
+    overflow: hidden;
 
-      width: 6px;
-      height: 6px;
+    @include vp-1199 {
+      .coaches__img {
+        pointer-events: auto;
+      }
+    }
+    touch-action: auto;
 
-      background-color: $color-default-white;
-      border-radius: 90%;
+    &--hover {
+      @include set-hover();
     }
   }
-}
+
+  .coaches__skills {
+    display: none;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 163px;
+    padding-left: 22px;
+    overflow: auto;
+
+    @include vp-767 {
+      padding-left: 25px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    h4 {
+      align-self: center;
+      margin-top: 0;
+      margin-right: 28px;
+      margin-bottom: 35px;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      color: $color-lightgrey;
+    }
+
+    li {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: -15px;
+
+        width: 6px;
+        height: 6px;
+
+        background-color: $color-default-white;
+        border-radius: 90%;
+      }
+    }
+  }
 }
