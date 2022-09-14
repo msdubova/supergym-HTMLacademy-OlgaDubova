@@ -230,6 +230,7 @@
       }
     }
   }
+
   touch-action: auto;
 
   &--hover {
@@ -242,13 +243,15 @@
   flex-grow: 1;
   flex-direction: column;
   margin-left: 22px;
-  overflow: scroll;
+  overflow: auto;
 
   @include vp-767 {
     padding-left: 25px;
   }
 
-  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 
   h4 {
     align-self: center;

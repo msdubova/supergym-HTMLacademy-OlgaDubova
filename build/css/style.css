@@ -2420,8 +2420,11 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   margin-left: 22px;
-  overflow: scroll;
-  -ms-overflow-style: none;
+  overflow: auto;
+}
+
+.coaches__skills::-webkit-scrollbar {
+  width: 0;
 }
 
 .coaches__skills h4 {
@@ -2639,6 +2642,7 @@ button,
 
 .offers p {
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .offers a {
