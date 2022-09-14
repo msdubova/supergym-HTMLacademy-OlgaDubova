@@ -4224,7 +4224,7 @@ button,
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    margin-top: 25px;
+    margin-top: 0px;
   }
 
   .offers .offers__container {
@@ -4295,7 +4295,7 @@ button,
 
   .reviews h3 {
     width: 44%;
-    margin-bottom: 25px;
+    margin-bottom: 14%;
     margin-left: auto;
     text-align: left;
   }
