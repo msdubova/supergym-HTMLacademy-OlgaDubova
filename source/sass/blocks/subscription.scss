@@ -8,6 +8,8 @@
 
     h2 {
       margin-bottom: 15px;
+      padding-right: 0;
+
       font-size: 42px;
       line-height: 42px;
       text-align: center;
@@ -15,7 +17,16 @@
 
     .subscription__container {
       padding-top: 51px;
+      padding-right: 45px;
       padding-bottom: 59px;
+    }
+
+    .subscription__nav {
+      padding-right: 0;
+
+      &::after {
+        width: 100%;
+      }
     }
 
     .subscription__option {
@@ -43,8 +54,8 @@
 
     li {
       width: 70%;
-      margin-bottom: 41px;
       margin-right: 0;
+      margin-bottom: 41px;
     }
 
     .subscription__button {
@@ -55,6 +66,7 @@
   @include vp-767 {
     h2 {
       margin-bottom: 5px;
+
       font-size: 32px;
       line-height: 32px;
     }
@@ -85,6 +97,7 @@
 
     .subscription__container {
       padding-top: 22px;
+      padding-right: 15px;
       padding-bottom: 35px;
     }
 
@@ -124,6 +137,7 @@
     display: block;
     margin-top: 48px;
     margin-bottom: 20px;
+    padding-right: 40px;
 
     font-weight: 700;
     font-size: 49px;
@@ -148,8 +162,9 @@
   button {
     &:hover,
     &:focus {
-      outline-color: transparent;
       position: relative;
+
+      outline-color: transparent;
 
       &::after {
         content: "";
@@ -159,16 +174,18 @@
 
         width: 100%;
         height: 2px;
-        opacity: 0.3;
+
         background: $color-secondary-red;
+        opacity: 0.3;
       }
     }
   }
 
   ul {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-self: center;
 
     @include reset-ul;
   }
@@ -180,17 +197,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 31%;
-    margin-bottom: 30px;
+    width: 30%;
     margin-right: 40px;
+    margin-bottom: 30px;
     padding: 55px 69px 50px;
 
     background-color: $color-default-white;
     border: 7px solid transparent;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   b {
@@ -220,12 +233,17 @@
     color: $color-primary-blue;
   }
 
+  img {
+    width: 100%;
+  }
+
   svg {
     margin-left: 14px;
   }
 
   .subscription__container {
     padding-top: 70px;
+    padding-right: 63px;
     padding-bottom: 90px;
   }
 
@@ -237,13 +255,14 @@
     width: fit-content;
     margin: 0 auto;
     margin-bottom: 38px;
+    padding-right: 40px;
 
     &::after {
       content: "";
       position: absolute;
       bottom: 0;
 
-      width: 100%;
+      width: 90%;
       height: 2px;
 
       background-color: rgba(120, 120, 120, 0.2);
@@ -314,7 +333,6 @@
     }
   }
 }
-
 
 .subscription li:hover {
   border: solid;
