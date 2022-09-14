@@ -5,23 +5,6 @@
       padding-bottom: 86px;
     }
 
-    .coaches__info {
-      left: calc(50% - 134px);
-
-      width: 268px;
-    }
-
-    .coaches__img {
-      left: calc(50% - 134px);
-
-      background: none;
-    }
-
-    img {
-      width: 268px;
-      height: 294px;
-    }
-
     h2 {
       margin-bottom: 42px;
 
@@ -31,13 +14,8 @@
     }
 
     h3 {
-      width: 100%;
       margin-right: 0;
-      margin-left: 20px;
-
-      text-align: left;
     }
-
     h4 {
       margin-right: 35px;
     }
@@ -45,12 +23,26 @@
     .coaches__slider {
       width: 83.5%;
     }
-  }
 
+    .coaches__img {
+      flex-direction: column;
+    }
+
+    .coaches__button {
+      bottom: 37%;
+    }
+    img {
+      height: 100%;
+    }
+  }
   @include vp-767 {
     h2 {
       font-size: 32px;
       line-height: 32px;
+    }
+
+    h3 {
+      margin-top: 20px;
     }
 
     h4 {
@@ -69,6 +61,12 @@
       }
     }
 
+    img {
+      width: 100%;
+      min-height: 274px;
+
+      object-fit: cover;
+    }
     .coaches__container {
       padding-top: 22px;
       padding-bottom: 58px;
@@ -78,20 +76,9 @@
       width: 78%;
     }
 
-    .coaches__img {
-      left: calc(50% - 113px);
-    }
 
     .coaches__info {
-      left: calc(50% - 113px);
-
-      width: 226px;
-      padding: 52px 24px 42px 24px;
-    }
-
-    img {
-      width: 226px;
-      height: 274px;
+      padding: 22px 24px 42px 24px;
     }
 
     .coaches__button {
@@ -116,8 +103,7 @@
   }
 
   img {
-    width: 260px;
-    height: 294px;
+    width: 100%;
 
     object-fit: cover;
   }
@@ -143,6 +129,7 @@
     font-size: 18px;
     line-height: 27px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
+    text-align: center;
   }
 
   ul {
@@ -166,18 +153,20 @@
   }
 
   .coaches__img {
-    position: absolute;
-    top: 0;
     z-index: 1;
 
+    display: flex;
+    align-items: stretch;
     width: 100%;
-    height: fit-content;
+    height: 100%;
 
     background-color: $color-primary-black;
   }
 
   .coaches__info {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 10;
 
     display: flex;
@@ -186,51 +175,27 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 30px 40px 22px 48px;
+    padding: 32px 40px 22px 48px;
 
     color: $color-default-white;
   }
 
   .coaches__button {
-    top: 253px;
-  }
+    top: auto;
+bottom: 35%;
 }
 
 .coaches__item {
   position: relative;
 
-  display: flex;
-  align-items: flex-end;
   width: 260px;
-  height: 294px;
   overflow: hidden;
 
   @include vp-1199 {
     .coaches__img {
       pointer-events: auto;
     }
-
-    &--hover {
-      &::after {
-        left: calc(50% - 134px);
-
-        width: 268px;
-      }
-    }
   }
-
-  @include vp-767 {
-    height: 274px;
-
-    &--hover {
-      &::after {
-        left: calc(50% - 113px);
-
-        width: 226px;
-      }
-    }
-  }
-
   touch-action: auto;
 
   &--hover {
@@ -242,7 +207,8 @@
   display: none;
   flex-grow: 1;
   flex-direction: column;
-  margin-left: 22px;
+  height: 163px;
+  padding-left: 22px;
   overflow: auto;
 
   @include vp-767 {
@@ -283,4 +249,5 @@
       border-radius: 90%;
     }
   }
+}
 }

@@ -2304,8 +2304,7 @@ button,
 }
 
 .coaches img {
-  width: 260px;
-  height: 294px;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -2329,6 +2328,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-align: center;
 }
 
 .coaches ul {
@@ -2353,18 +2353,22 @@ button,
 }
 
 .coaches .coaches__img {
-  position: absolute;
-  top: 0;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   background-color: #102654;
 }
 
 .coaches .coaches__info {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2381,30 +2385,24 @@ button,
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 30px 40px 22px 48px;
+  padding: 32px 40px 22px 48px;
   color: #ffffff;
 }
 
 .coaches .coaches__button {
-  top: 253px;
+  top: auto;
+  bottom: 35%;
 }
 
-.coaches__item {
+.coaches .coaches__item {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
   width: 260px;
-  height: 294px;
   overflow: hidden;
   -ms-touch-action: auto;
   touch-action: auto;
 }
 
-.coaches__item--hover::after {
+.coaches .coaches__item--hover::after {
   content: " ";
   position: absolute;
   top: 0;
@@ -2415,13 +2413,13 @@ button,
   background: rgba(16, 38, 84, 0.89);
 }
 
-.coaches__item--hover .coaches__skills {
+.coaches .coaches__item--hover .coaches__skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.coaches__skills {
+.coaches .coaches__skills {
   display: none;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -2430,15 +2428,16 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-left: 22px;
+  height: 163px;
+  padding-left: 22px;
   overflow: auto;
 }
 
-.coaches__skills::-webkit-scrollbar {
+.coaches .coaches__skills::-webkit-scrollbar {
   width: 0;
 }
 
-.coaches__skills h4 {
+.coaches .coaches__skills h4 {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -2453,11 +2452,11 @@ button,
   color: #b6bdcc;
 }
 
-.coaches__skills li {
+.coaches .coaches__skills li {
   position: relative;
 }
 
-.coaches__skills li::before {
+.coaches .coaches__skills li::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -3429,21 +3428,6 @@ button,
     padding-bottom: 86px;
   }
 
-  .coaches .coaches__info {
-    left: calc(50% - 134px);
-    width: 268px;
-  }
-
-  .coaches .coaches__img {
-    left: calc(50% - 134px);
-    background: none;
-  }
-
-  .coaches img {
-    width: 268px;
-    height: 294px;
-  }
-
   .coaches h2 {
     margin-bottom: 42px;
     font-size: 42px;
@@ -3452,10 +3436,7 @@ button,
   }
 
   .coaches h3 {
-    width: 100%;
     margin-right: 0;
-    margin-left: 20px;
-    text-align: left;
   }
 
   .coaches h4 {
@@ -3466,13 +3447,23 @@ button,
     width: 83.5%;
   }
 
-  .coaches__item .coaches__img {
-    pointer-events: auto;
+  .coaches .coaches__img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
-  .coaches__item--hover::after {
-    left: calc(50% - 134px);
-    width: 268px;
+  .coaches .coaches__button {
+    bottom: 37%;
+  }
+
+  .coaches img {
+    height: 100%;
+  }
+
+  .coaches .coaches__item .coaches__img {
+    pointer-events: auto;
   }
 
   .advantages h2 {
@@ -4039,6 +4030,10 @@ button,
     line-height: 32px;
   }
 
+  .coaches h3 {
+    margin-top: 20px;
+  }
+
   .coaches h4 {
     margin-right: 25px;
   }
@@ -4054,6 +4049,13 @@ button,
     margin-bottom: 0;
   }
 
+  .coaches img {
+    width: 100%;
+    min-height: 274px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
   .coaches .coaches__container {
     padding-top: 22px;
     padding-bottom: 58px;
@@ -4063,19 +4065,8 @@ button,
     width: 78%;
   }
 
-  .coaches .coaches__img {
-    left: calc(50% - 113px);
-  }
-
   .coaches .coaches__info {
-    left: calc(50% - 113px);
-    width: 226px;
-    padding: 52px 24px 42px 24px;
-  }
-
-  .coaches img {
-    width: 226px;
-    height: 274px;
+    padding: 22px 24px 42px 24px;
   }
 
   .coaches .coaches__button {
@@ -4092,16 +4083,7 @@ button,
     right: 4%;
   }
 
-  .coaches__item {
-    height: 274px;
-  }
-
-  .coaches__item--hover::after {
-    left: calc(50% - 113px);
-    width: 226px;
-  }
-
-  .coaches__skills {
+  .coaches .coaches__skills {
     padding-left: 25px;
   }
 
