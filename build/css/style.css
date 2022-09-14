@@ -3881,6 +3881,8 @@ button,
 
   .header .header__ul {
     top: 175px;
+    left: auto;
+    right: 177px;
   }
 
   .header .header__img {
