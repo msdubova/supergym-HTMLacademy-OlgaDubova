@@ -2195,7 +2195,7 @@ button,
 }
 
 .application a {
-  margin-top: 49px;
+  margin-top: 19px;
   padding: 25px;
 }
 
@@ -2207,6 +2207,10 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 120px;
+}
+
+.application .application__wrapper {
+  margin-bottom: 30px;
 }
 
 .application .application__block {
@@ -2225,6 +2229,11 @@ button,
   align-items: stretch;
   padding: 83px 75px 20px 78px;
   background: #ed0233;
+}
+
+.application .application__img {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .application .application__info {
@@ -3957,13 +3966,21 @@ button,
     width: 100%;
   }
 
+  .application img {
+    width: 100%;
+  }
+
   .application a {
-    margin-top: 32px;
+    margin-top: 16px;
   }
 
   .application h2 {
     font-size: 52px;
     line-height: 52px;
+  }
+
+  .application .application__wrapper {
+    margin-bottom: 16px;
   }
 
   .application .application__container {

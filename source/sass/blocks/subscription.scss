@@ -150,6 +150,7 @@
     &:focus {
       outline-color: transparent;
       position: relative;
+
       &::after {
         content: "";
         position: absolute;
