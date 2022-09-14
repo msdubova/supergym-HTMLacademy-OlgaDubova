@@ -2624,14 +2624,14 @@ button,
 
 .offers h2 {
   display: block;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-align: center;
   margin-top: 48px;
   margin-bottom: 52px;
+  font-weight: 700;
   font-size: 49px;
   line-height: 49px;
   font-family: "Bebas Neue", "Arial", sans-serif;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .offers img {
@@ -2645,9 +2645,9 @@ button,
 .offers h3 {
   margin-top: 0;
   margin-bottom: 6px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
   line-height: 31px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   text-align: left;
 }
 
@@ -2695,11 +2695,11 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   width: 560px;
 }
 
@@ -2710,6 +2710,7 @@ button,
   flex-direction: row;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  margin-right: 40px;
   background-color: #ed0233;
 }
 
@@ -2722,9 +2723,9 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 211px;
+  margin-bottom: 40px;
   padding: 29px;
   padding-top: 25px;
-  margin-bottom: 40px;
   border: solid;
   border-width: 7px;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
@@ -3279,8 +3280,8 @@ button,
   .gym .gym__video {
     top: auto;
     bottom: 267px;
-    max-width: 350px;
     left: calc(50% - 133px);
+    max-width: 350px;
   }
 
   .subscription {
@@ -3578,6 +3579,7 @@ button,
   }
 
   .offers .offers__box--special {
+    margin-right: 0;
     margin-bottom: 30px;
   }
 
@@ -3591,8 +3593,8 @@ button,
 
   .offers .offers__block {
     width: 48%;
-    padding-top: 20px;
     margin-bottom: 30px;
+    padding-top: 20px;
   }
 
   .offers .offers__block:last-child {
@@ -3926,8 +3928,8 @@ button,
     position: relative;
     top: 0;
     left: 0;
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
     margin-bottom: 70px;
   }
 
@@ -4206,9 +4208,9 @@ button,
   }
 
   .offers h2 {
+    margin-bottom: 42px;
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 42px;
   }
 
   .offers p {
