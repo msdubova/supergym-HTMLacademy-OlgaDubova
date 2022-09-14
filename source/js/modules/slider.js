@@ -20,6 +20,7 @@ new Swiper('.reviews__wrapper', {
 });
 
 new Swiper('.coaches__slider', {
+  loop: true,
   spaceBetween: 0,
   slidesPerView: 1,
   direction: 'horizontal',

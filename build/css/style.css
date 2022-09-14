@@ -1524,7 +1524,7 @@ button,
   width: 16px;
   height: 32px;
   background-color: transparent;
-  background-image: url("../../img/sprite/vector.svg");
+  background-image: url("../img/sprite/vector.svg");
   background-size: contain;
   border: none;
   cursor: pointer;
@@ -1611,7 +1611,7 @@ button,
   width: 150%;
   height: 150%;
   background-color: transparent;
-  background-image: url("../../img/svg/ellipse.svg");
+  background-image: url("../img/svg/ellipse.svg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transform: translate(-50%, -50%);
@@ -1940,8 +1940,20 @@ button,
 
 .subscription button:hover,
 .subscription button:focus {
-  outline-color: #fc96ac8a;
-  border-radius: 7px;
+  outline-color: transparent;
+  position: relative;
+}
+
+.subscription button:hover::after,
+.subscription button:focus::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  opacity: 0.3;
+  background: #d10a42;
 }
 
 .subscription ul {
