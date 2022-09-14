@@ -2892,6 +2892,7 @@ button,
 
 .feedback a {
   margin: 0;
+  display: block;
   font-size: 14px;
   line-height: 21px;
 }
