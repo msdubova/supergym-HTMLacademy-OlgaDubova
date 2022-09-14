@@ -2,7 +2,7 @@
   min-height: 756px;
 
   @include vp-1199 {
-    min-height: 854px;
+    min-height: auto;
 
     h2 {
       margin-bottom: 14px;
@@ -29,6 +29,7 @@
     .gym__container {
       flex-direction: column;
       padding-top: 50px;
+      padding-bottom: 183px;
     }
 
     .gym__info {
@@ -45,7 +46,9 @@
     }
 
     .gym__video {
-      top: 587px;
+      top: auto;
+      bottom: 267px;
+      max-width: 350px;
       left: calc(50% - 133px);
     }
   }
@@ -90,8 +93,9 @@
       position: relative;
       top: 0;
       left: 0;
-
+      max-width: 100%;
       width: 100%;
+      margin-bottom: 70px ;
     }
   }
 
@@ -125,6 +129,11 @@
     margin-bottom: 8px;
 
     letter-spacing: -0.01em;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+
   }
 
   .gym__container {
@@ -154,6 +163,7 @@
   .gym__video {
     position: absolute;
     top: 78.5%;
+    top:408px;
     left: 39.5%;
   }
 }
