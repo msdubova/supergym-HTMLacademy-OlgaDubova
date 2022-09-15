@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import './modules/slider';
-
+import iMask from 'imask';
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
@@ -214,40 +214,25 @@ function setHover() {
 
 // Функция задает маску ввода номера телефона в форме
 function maskPhone() {
-  const elems = document.querySelectorAll('input[type="tel"]');
+  const MIN_LENGTH = 16;
+  const inputTel = document.querySelector('input[type="tel"]');
+  const form = document.querySelector('.form');
 
-  function mask(event) {
-    const keyCode = event.keyCode;
-    const template = '+7 (___) ___-__-__';
-    const def = template.replace(/\D/g, '');
-    const val = event.target.value.replace(/\D/g, '');
+  iMask(inputTel, {mask: '+{7}(000)000-00-00'});
 
-    let i = 0;
-    let newValue = template.replace(/[_\d]/g, function (a) {
-      return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
-    });
-    i = newValue.indexOf('_');
-    if (i !== -1) {
-      newValue = newValue.slice(0, i);
-    }
-    let reg = template.substr(0, event.target.value.length).replace(/_+/g,
-        function (a) {
-          return '\\d{1,' + a.length + '}';
-        }).replace(/[+()]/g, '\\$&');
-    reg = new RegExp('^' + reg + '$');
-    if (!reg.test(event.target.value) || event.target.value.length < 5 || keyCode > 47 && keyCode < 58) {
-      event.target.value = newValue;
-    }
-    if (event.type === 'blur' && event.target.value.length < 5) {
-      event.target.value = ' ';
-    }
-  }
+  form.addEventListener('submit', () => {
+    inputTel.setCustomValidity('');
+    if (inputTel.value.length < MIN_LENGTH) {
+      inputTel.setCustomValidity('Введите номер телефона полностью');
+    } inputTel.reportValidity();
+  });
 
-  for (const elem of elems) {
-    elem.addEventListener('input', mask);
-    elem.addEventListener('focus', mask);
-    elem.addEventListener('blur', mask);
-  }
+  inputTel.addEventListener('input', () => {
+    inputTel.setCustomValidity('');
+    if (inputTel.value.length < MIN_LENGTH) {
+      inputTel.setCustomValidity('Введите номер телефона полностью');
+    } inputTel.reportValidity();
+  });
 }
 
 // localStorage

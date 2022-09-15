@@ -53,6 +53,7 @@
     "duplicate-package-checker-webpack-plugin": "3.0.0"
   },
   "dependencies": {
+    "imask": "^6.4.3-alpha.0",
     "swiper": "^8.3.2"
   }
 }
