@@ -55,6 +55,7 @@
 
     .application__img {
       width: 57%;
+      flex-shrink: 1;
     }
 
     .application__info {
@@ -192,6 +193,7 @@
 
   .application__img {
     flex-shrink: 0;
+    width: 56.9%;
   }
 
   .application__info {

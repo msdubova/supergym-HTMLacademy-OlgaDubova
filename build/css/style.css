@@ -1962,16 +1962,10 @@ button,
 }
 
 .subscription ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1990,7 +1984,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 30%;
   margin-right: 40px;
   margin-bottom: 30px;
   padding: 55px 69px 50px;
@@ -2244,6 +2237,7 @@ button,
 .application .application__img {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  width: 56.9%;
 }
 
 .application .application__info {
@@ -3325,6 +3319,9 @@ button,
   }
 
   .subscription ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3395,6 +3392,8 @@ button,
 
   .application .application__img {
     width: 57%;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
   }
 
   .application .application__info {
